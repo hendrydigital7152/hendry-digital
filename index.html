@@ -1,709 +1,361 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Hendry Digital | Website Profesional untuk UMKM</title>
-
-<meta name="description" content="Hendry Digital jasa pembuatan website profesional untuk bisnis dan UMKM dengan desain modern, responsif, dan mudah digunakan.">
-
-<style>
-
-body{
-         font-family: Arial, sans-serif;
-         margin :0;
-         background:#F8F1E7;
-         scroll-behavior:smooth;
-}
-
-nav{
-       display:flex;
-        justify-content:space-between;
-       align-items:center;
-       padding:15px 20px;
-       background:#6F4E37;
-       box-shadow:0 2px 10px #ccc;
-       position:sticky;
-       top:0;
-       z-index:100;
-}
-nav h2{
-              font-size:28px;
-              color:white;
-}
-.menu{
-              display:flex;
-              gap:20px;
-}
-.menu a{
-              text-decoration:none;
-              color:white;
-              font-size:18px;
-}
-.menu a:hover{
-             color:#D2A679;
-}
-
-.hero{
-       text-align:center;
-       padding:40px 20px;
-}
-
-.hero h1{
-       font-size:36px;
-       margin-bottom:20px;
-}
-
-.hero p{
-       font-size:18px;
-       margin-bottom:30px;
-}
-
-.hero .order-btn{
-       background:#6F4E37;
-       color:white;
-       padding:15px 30px;
-       border-radius:30px;
-       font-size:18px;
-       display:inline-block;
-       margin:10px;
-}
-
-.hero .order-btn:hover{
-            background:#4B2E1F;
-            transform:scale(1.05);
-}
-.about{
-          padding:70px 20px;
-          background:white;
-          text-align:center;
-}
-.about h2{
-          font-size:36px;
-}
-
-section{
-             box-sizing:border-box;
-             scroll-margin-top:80px;
-}
-
-.services{
-       padding:70px 20px;
-       background:#f5f5f5;
-       text-align:center;
-}
-.services h2{
-        font-size:36px;
-        text-align:center;
-}
-.project{
-      padding:50px 20px;
-      background:#F8F1E7;
-      text-align:center;
-}
-.project h2{
-       font-size:36px;
-}
-.service-container{
-            display:flex;
-             justify-content:center;
-            gap:20px;
-            flex-wrap:wrap;
-}
-
-.card{
-           background:#FFF8F0;
-           padding:25px;
-           border-radius:15px;
-           margin:20px;
-           width:250px;
-           min-height:150px;
-           box-shadow:0 5px 15px #ddd;
-           transition:0.3s ease;
-           border:1px solid #eee;
-}
-.card img{
-           width:100%;
-           height:150px;    
-           object-fit:cover;
-           border-radius:15px;
-           transition:0.3s ease;
-}
-.card:hover img{
-                   transform:scale(1.1);
-}
-
-.card h3{
-              font-size:24px;
-              margin-bottom:15px;
-              color:#4B2E1F;
-}
-
-.card p{
-             font-size:16px;
-             line-height:1.6;
-             color:#333;
-}
-.price{
-           font-size:20px;
-           font-weight:bold;
-           color:#6F4E37;
-}
-
-.order-btn{
-             display:inline-block;
-             text-decoration:none;
-             background:#6F4E37;
-             color:white;
-             padding:10px 20px;
-             border:none;
-             border-radius:20px;
-             font-size:16px;
-             transition:0.3s ease;
-}
-
-.order-btn:hover{
-            background:#4B2E1F;
-            transform:scale(1.05);
-}
-
-.card:hover{
-            transform:translateY(-10px);
-            box-shadow:0 10px 20px #ccc;
-}
-
-.portfolio{
-       padding:70px 20px;
-       background:#FFF8F0;
-       text-align:center;
-}
-
-
-.portfolio h2{
-       font-size:36px;
-}
-.gallery-card{
-          background:#F8F1E7;
-}
-.gallery-card h3{
-          color:#4B2E1F;
-           font-size:26px;
-}
-.contact{
-             padding:70px 20px;
-             background:#f5f5f5;
-             text-align:center;
-}
-.contact .card{
-             margin-top:20px;
-             background:#FFF8F0;
-             color:#333;
-             box-shadow:0 5px 15px #ddd;
-}
-.contact .card h3{
-       color:#4B2E1F;
-}
-
-.contact .card p{
-       color:#333;
-}
-.contact h2{
-             font-size:36px;
-}
-.testimonial{
-            padding:50px 20px;
-            background:white;
-            text-align:center;
-}
-.testimonial h2{
-            font-size:36px;
-}
-
-footer{
-           padding:20px;
-           background:#222;
-           color:white;
-           text-align:center;
-           padding-bottom:80px;
-}
-
-.whatsapp-btn{
-             position:fixed;
-             bottom:15px;
-             right:15px;
-             background:#25D366;
-             color:white;
-             padding:10px;
-             border-radius:50%;
-             text-decoration:none;
-             font-size:17px;
-             z-index:200;
-             transition:0.3s ease;
-}
-.whatsapp-btn:hover{
-                          transform:scale(1.1);
-}
-.fade-in{
-           opacity:0;
-           transform:translateY(30px);
-           transition:0.8s ease;
-}
-.fade-in.show{
-           opacity:1;
-           transform:translateY(0);
-}
-
-@media(max-width:600px){
-nav{
-        flex-direction:column;
-}
-.menu{
-        margin-top:10px;
-}
-
-.hero h1{
-               font-size:28px;
-}
-.hero p{
-               font-size:16px;
-}
-.card{
-               width:90%;
-               margin:15px auto;
-}
-.hero .order-btn{
-            font-size:16px;
-            padding:12px 25px;
-}
-nav h2{
-             font-size:22px;
-}
-.menu{
-             gap:10px;
-             flex-wrap:wrap;
-             justify-content:center;
-}
-.contact .card{
-              width:90%;
-}
-
-}  
-
-.back-top{
-       position:fixed;
-       bottom:85px;
-       right:15px;
-       width:40px;
-       height:40px;
-       border:none;
-       border-radius:50%;
-       background:#6F4E37;
-       color:white;
-       font-size:20px;
-       cursor:pointer;
-       z-index:1000;
-}
-.back-top:hover{
-        transform:scale(1.1);
-}
-       
-.benefit{
-            padding:70px 20px;
-            background:white;
-            text-align:center;
-}
-.benefit h2{
-                    font-size:36px;
-                    margin-bottom:40px;
-}
-
-.testimonial .card h3{
-            color:#4B2E1F;
-}
-.testimonial .card p{
-            color:#333;
-}
-.project .card h3{
-       color:#4B2E1F;
-}
-.project .card p{
-        color:#333;
-}
-.project h2{
-       color:#4B2E1F;
-}
-
-.testimonial h2{
-       color:#4B2E1F;
-}
-
-.contact .card:hover{
-       transform:none;
-       box-shadow:0 5px 15px #ddd;
-}
-
-.contact .card h3{
-      color:#4B2E1F;
-}
-
-.contact .card p{
-      color:#333;
-}
-</style>
-
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>notepad</title>
 </head>
-
-<body>
-
-<nav>
-    <h2>Hendry Digital</h2>
-
-    <div class="menu">
-
-           <a href="#home">Home</a>
-           <a href="#tentang">Tentang</a>
-           <a href="#layanan">Layanan</a>
-           <a href="#portfolio">Portfolio</a>
-           <a href="#kontak">Kontak</a>
-    </div>
-</nav>
-
-<section id="home" class="hero">
-
-<h1>Website Profesional untuk Bisnis dan UMKM</h1>
-
-<p>Hendry Digital membantu bisnis memiliki website modern, responsif, dan mudah digunakan.</p>
-
-<p>
-Contoh project: Kedai Kopi Nusantara dengan desain website coffee shop profesional.
-</p>
-
-<a class="order-btn" href="#project">
-Lihat Project
-</a>
-
-<a class="order-btn" href="#layanan">
-Lihat Layanan Website
-</a>
-
-<a class="order-btn" href="https://wa.me/6287777986536"  target="_blank">
- Konsultasi Gratis
-</a>
-
-</section>
-
-<section id="tentang" class="about fade-in">
-
-<h2>Tentang Kami</h2>
-<p>
-Hendry Digital membantu bisnis dan UMKM memiliki website profesional, modern, responsif, dan mudah digunakan untuk meningkatkan kepercayaan pelanggan.
-</p>
-
-</section>
-
-<section class="about fade-in">
-
-<h2>Tentang Developer</h2>
-<p>
-Saya membantu bisnis dan UMKM membuat website profesional yang modern, responsif, dan mudah digunakan untuk meningkatkan kepercayaan pelanggan.
-
-Layanan yang tersedia :
-Website Bisnis, Landing Page, dan Website Portofolio.
-</p>
-
-</section>
-
-<section class="benefit fade-in">
-<h2>Kenapa Memilih Website Kami?</h2>
-<div class="service-container">
-
-<div class="card">
-<h3>Desain Responsif</h3>
-<p>Tampilan website nyaman digunakan di HP, tablet, dan komputer.</p>
-</div>
-
-<div class="card">
-<h3>Modern Design</h3>
-
-<p>Desain profesional untuk meningkatkan kepercayaan pelanggan.
-</p>
-
-</div>
-
-<div class="card">
-<h3>Support WhatsApp</h3>
-<p>Memudahkan pelanggan menghubungi bisnis Anda dengan cepat.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="layanan" class="services fade-in">
-
-<h2>Layanan Website</h2>
-
-<p>
-Saya membantu membuat website profesional untuk bisnis, UMKM, dan personal branding.
-</p>
-
-<div class="service-container">
-
-<div class="card">
-<h3>Website Bisnis</h3>
-<p>Membuat website profesional untuk memperkenalkan bisnis dan meningkatkan kepercayaan pelanggan.</p>
-</div>
-
-<div class="card">
-<h3>Landing Page</h3>
-<p> Membuat halaman promosi produk yang menarik dan fokus meningkatkan penjualan.</p>
-</div>
-
-<div class="card">
-<h3>Toko Online</h3>
-<p>Membuat website jualan dengan tampilan modern dan mudah digunakan.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="portfolio" class="services fade-in">
-
-<h2>Portofolio Website</h2>
-
-<p>
-Contoh website yang dibuat Hendry Digital untuk membantu bisnis dan UMKM tampil profesional.
-</p>
-
-<div class="service-container">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Website Laptop">
-
-<h3>Website Coffee Shop</h3>
-
-<p>Website profesional untuk bisnis cafe dengan tampilan modern, responsif, dan mudah digunakan.</p>
-
-<p class="price">Mulai Rp 3 Juta</p>
-
-<a class="order-btn" href="https://wa.me/6287777986536" target="_blank">
-Pesan Sekarang
-</a>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1551650975-87deedd944c3" alt="Website Bisnis">
-
-<h3>Website UMKM</h3>
-<p>Website untuk membantu UMKM memperkenalkan produk dan meningkatkan kepercayaan pelanggan.</p>
-
-<p class="price">Mulai Rp 2 Juta</p>
-
-<a class="order-btn" href="https://wa.me/6287777986536">
-Pesan Sekarang
-</a>
-
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Digital Portfolio">
-
-<h3>Website Portfolio</h3>
-
-<p>Website personal untuk membangun branding dan menampilkan karya profesional.</p>
-<p class="price">Mulai Rp 1 Juta</p>
-
-<a class="order-btn" href="https://wa.me/6287777986536">
-Pesan Sekarang
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="portfolio">
-
-<h2>Contoh Tampilan Website</h2>
-
-<div class="service-container">
-
-<div class="card gallery-card">
-
-<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e" alt="Kopi Arabika">
-
-<h3>Website Landing Page</h3>
-
-<p>Website promosi profesional untuk memperkenalkan produk dan meningkatkan penjualan .</p>
-</div>
-
-<div class="card gallery-card">
-
-<img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Kopi Robusta">
-
-<h3>Website UMKM</h3>
-
-<p>Website modern untuk membantu bisnis kecil tampil lebih terpercaya.</p>
-</div>
-
-<div class="card gallery-card">
-
-<img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a" alt="Kopi Espresso">
-
-<h3>Website Personal Branding</h3>
-
-<p>Website untuk menampilkan profil, layanan, dan karya profesional.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="project" class="project">
-
-<h2>Project Website</h2>
-<div class="service-container">
-
-<div class="card">
-
-<h3>Kedai Kopi Nusantara</h3>
-
-<p>
-Contoh project website bisnis dengan desain modern, responsif, dan mudah digunakan pelanggan.
-</p>
-
-<p>
-Fitur:
-<br>
-✓  Landing Page
-<br>
-✓  Menu Produk
-<br>
-✓  WhatsApp Integration
-<br>
-✓  Responsive Mobile
-</p>
-</div>
-</div>
-</section>
-
-<section class="testimonial">
-
-<h2>Apa Kata Pelanggan</h2>
-
-<div class="service-container">
-
-<div class="card">
-<h3>Andi - Pemilik UMKM</h3>
-<p>"Website terlihat profesional dan membantu bisnis saya lebih dipercaya pelanggan."</p>
-</div>
-
-<div class="card">
-<h3>Sinta - Pengusaha Online</h3>
-<p>"Tampilan website modern, responsif, dan memudahkan pelanggan menemukan informasi bisnis saya."</p>
-</div>
-
-<div class="card">
-<h3>Budi - Pebisnis</h3>
-<p>"Hendry Digital membantu bisnis saya tampil lebih profesional dan siap berkembang di internet."</p>
-</div>
-
-</div>
-
-</section> 
-
-<section id="kontak" class="contact">
-
-<h2>Kontak</h2>
-
-<p>
-Siap membantu bisnis Anda memiliki website profesional,
-Hubungi Hendry Digital untuk konsultasi dan pemesanan.
-</p>
-
-<div class="service-container">
-
-<div class="card">
-<h3>Email</h3>
-<p>
-<a href="mailto:hendrycandra@gmail.com">hendrycandra@gmail.com</a>
-</p>
-</div>
-
-
-<div class="card">
-
-<h3>WhatsApp</h3>
-<p>Hubungi kami untuk pemesanan dan informasi lebih lanjut.</p>
-<a class="order-btn" href="https://wa.me/6287777986536" target="_blank">
-Chat WhatsApp
-</a>
-
-</div>
-
-<div class="card">
-<h3>Konsultasi</h3>
-<p>Diskusikan kebutuhan website untuk bisnis Anda.</p>
-</div>
-
-<div class="card">
-<h3>Jam Operasional</h3>
-<p>Senin - Minggu</p>
-<p>08.00 - 22.00</p>
-</div>
-
-<div class="card">
-<h3>Sosial Media</h3>
-<p>Instagram: @hendry.digital</p>
-</div>
-
-</div>
-
-</section>
-
-<a class="whatsapp-btn" href="https://wa.me/6287777986536" target="_blank">
-☎
-</a>
-
-<footer>
-
-<h3>Hendry Digital</h3>
-<p>Solusi website profesional untuk membantu bisnis dan UMKM Indonesia berkembang secara digital.</p>
-<p>© 2026 Hendry Digital. All Rights Reserved.</p>
-
-</footer>
-<button class="back-top">↑</button>
-<script>
-const elements = document.querySelectorAll(".fade-in");
-
-function showElements(){
-elements.forEach((el)=>{
-const position = el.getBoundingClientRect().top;
-
-if(position < window.innerHeight - 100){
-el.classList.add("show");
+<style type="text/css">
+ol,ul{
+display:block;
+list-style-type:none;
+margin:3px;
 }
-});
-}
-
-window.addEventListener("scroll", showElements);
-showElements();
-
-const backTop = document.querySelector(".back-top");
-
-backTop.addEventListener("click", function(){
-        window.scrollTo({
-                 top:0,
-                 behavior:"smooth"
-         });
-});
-
-</script>
-
+</style><body>
+<div>&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+<br>
+&lt;head&gt;<br>
+<br>
+&lt;style&gt;<br>
+<br>
+body{<br>
+font-family:Arial;<br>
+}<br>
+<br>
+.container{<br>
+display:flex;<br>
+gap:20px;<br>
+justify-content:center;<br>
+flex-wrap:wrap;<br>
+}<br>
+<br>
+.card{<br>
+background:#6F4E37;<br>
+color:white;<br>
+padding:25px;<br>
+border-radius:15px;<br>
+width:200px;<br>
+text-align:center;<br>
+transition:0.3s;<br>
+box-shadow:0 5px 15px rgba(0,0,0,0.2);<br>
+}<br>
+<br>
+.card:hover{<br>
+transform:translateY(-10px);<br>
+box-shadow:0 15px 25px rgba(0,0,0,0.3);<br>
+}<br>
+<br>
+button{<br>
+background :white;<br>
+color:#6F4E37;<br>
+padding:10px 20px;<br>
+border:none;<br>
+border-radius:20px;<br>
+cursor:pointer;<br>
+transition:0.3s;<br>
+}<br>
+<br>
+button:hover{<br>
+background:#6F4E37;<br>
+color:white;<br>
+transform:translateY(-3px);<br>
+}<br>
+<br>
+.project button,<br>
+.service-card button{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom:20px;<br>
+}<br>
+<br>
+.portfolio{<br>
+display:flex;<br>
+gap:30px;<br>
+justify-content:center;<br>
+flex-wrap:wrap;<br>
+margin-bottom:50px;<br>
+}<br>
+<br>
+.project{<br>
+background:#6F4E37;<br>
+color:white;<br>
+width:250px;<br>
+border-radius:15px;<br>
+overflow:hidden;<br>
+text-align:center;<br>
+transition:0.3s;<br>
+box-shadow:0 5px 15px rgba(0,0,0,0.2);<br>
+padding-bottom:20px;<br>
+margin-bottom:20px;<br>
+margin-left:auto;<br>
+margin-right:auto;<br>
+}<br>
+<br>
+.project img{<br>
+width:100%;<br>
+height:150px;<br>
+object-fit:cover;<br>
+}<br>
+<br>
+.project h2{<br>
+padding:15px 10px 5px;<br>
+font-size:22px;<br>
+min-height:50px;<br>
+}<br>
+<br>
+.project p{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:0 15px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line-height:1.6;<br>
+}<br>
+<br>
+.project:hover{<br>
+transform:translateY(-10px);<br>
+box-shadow:0 15px 25px rgba(0,0,0,0.3);<br>
+}<br>
+<br>
+.testimonial-container{<br>
+display:flex;<br>
+gap:30px;<br>
+justify-content:center;<br>
+flex-wrap:wrap;<br>
+margin-top:50px;<br>
+}<br>
+<br>
+.testimonial-card{<br>
+background:#6F4E37;<br>
+color:white;<br>
+width:250px;<br>
+padding:25px;<br>
+border-radius:15px;<br>
+text-align:center;<br>
+box-shadow:0 5px 15px rgba(0,0,0,0.2);<br>
+transition:0.3s;<br>
+}<br>
+<br>
+.testimonial-card:hover{<br>
+transform:translateY(-10px);<br>
+box-shadow:0 15px 25px rgba(0,0,0,0.3);<br>
+}<br>
+<br>
+footer{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#6F4E37;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:40px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-top:50px;<br>
+}<br>
+<br>
+footer h3{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:28px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom:15px;<br>
+}<br>
+<br>
+footer p{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:10px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line-height:1.6;<br>
+}<br>
+<br>
+.whatsapp-btn{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position:fixed;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; right:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bottom:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#25D366;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:15px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:50%;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:24px;<br>
+}<br>
+<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+<br>
+&lt;body&gt;<br>
+<br>
+&lt;h1 style="text-align:center;"&gt;<br>
+Layanan Hendry Digital<br>
+&lt;/h1&gt;<br>
+<br>
+&lt;div class="container"&gt;<br>
+&lt;div class="card"&gt;<br>
+<br>
+&lt;h2&gt;<br>
+Website UMKM<br>
+&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Website profesional untuk bisnis kecil<br>
+&lt;/p&gt;<br>
+<br>
+&lt;button&gt;<br>
+Konsultasi<br>
+&lt;/button&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+<br>
+&lt;h2&gt;<br>
+Landing Page<br>
+&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Halaman promosi produk atau jasa<br>
+&lt;/p&gt;<br>
+<br>
+&lt;button&gt;<br>
+Konsultasi<br>
+&lt;/button&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+<br>
+&lt;h2&gt;<br>
+Company Profile<br>
+&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Website profil bisnis profesional<br>
+&lt;/p&gt;<br>
+<br>
+&lt;button&gt;<br>
+Konsultasi<br>
+&lt;/button&gt;<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;h1 style="text-align:center; margin-top:50px;"&gt;<br>
+Portfolio Hendry Digital<br>
+&lt;/h1&gt;<br>
+<br>
+&lt;div class="portfolio"&gt;<br>
+<br>
+&lt;div class="project"&gt;<br>
+<br>
+&lt;img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e"&gt;<br>
+<br>
+&lt;h2&gt;<br>
+Kedai Kopi Nusantara<br>
+&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Website coffee shop modern untuk UMKM.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;button&gt;<br>
+Lihat Project<br>
+&lt;/button&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="project"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"&gt;<br>
+<br>
+&lt;h2&gt;<br>
+Website Toko Online<br>
+&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Landing page produk bisnis.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;button&gt;<br>
+Lihat Project<br>
+&lt;/button&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="project"&gt;<br>
+<br>
+&lt;img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"&gt;<br>
+<br>
+&lt;h2&gt;<br>
+Website Personal Branding<br>
+&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Website untuk menampilkan profil, layanan, dan karya profesional.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;button&gt;<br>
+Lihat Project<br>
+&lt;/button&gt;<br>
+<br>
+&lt;/div&gt; <br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;section class="testimonial"&gt;<br>
+<br>
+&lt;h1 style="text-align:center;"&gt;<br>
+Testimonial<br>
+&lt;/h1&gt;<br>
+<br>
+&lt;div class="testimonial-container"&gt;<br>
+<br>
+&lt;div class="testimonial-card"&gt;<br>
+<br>
+&lt;h3&gt;<br>
+Andi - Pemilik UMKM<br>
+&lt;/h3&gt;<br>
+<br>
+&lt;p&gt;<br>
+"Website terlihat profesional dan membantu bisnis saya lebih dipercaya pelanggan."<br>
+&lt;/p&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="testimonial-card"&gt;<br>
+<br>
+&lt;h3&gt;<br>
+Sinta - Pengusaha Online<br>
+&lt;/h3&gt;<br>
+<br>
+&lt;p&gt;<br>
+"Tampilan website modern dan memudahkan pelanggan menemukan informasi bisnis."<br>
+&lt;/p&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="testimonial-card"&gt;<br>
+<br>
+&lt;h3&gt;<br>
+Budi - Penulis<br>
+&lt;/h3&gt;<br>
+<br>
+&lt;p&gt;<br>
+"Hendry Digital membantu bisnis saya tampil lebih profesional di internet."<br>
+&lt;/p&gt;<br>
+<br>
+&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/section&gt;<br>
+<br>
+&lt;footer&gt;<br>
+<br>
+&lt;h3&gt;<br>
+Hendry Digital<br>
+&lt;/h3&gt;<br>
+<br>
+&lt;p&gt;<br>
+Website profesional untuk UMKM dan bisnis modern.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;p&gt;<br>
+Email: hendrycandra@gmail.com<br>
+&lt;/p&gt;<br>
+<br>
+&lt;p&gt;<br>
+Instagram: @hendry.digital<br>
+&lt;/p&gt;<br>
+<br>
+&lt;/footer&gt;<br>
+&lt;a class="whatsapp-btn" href="https://wa.me/6287777986536" target="_blank"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &#9742;<br>
+&lt;/a&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</div>
 </body>
 </html>
-
