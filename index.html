@@ -14,6 +14,7 @@ box-sizing:border-box;
 body{
          font-family: Arial, sans-serif;
          margin:0;
+         scroll-behavior:smooth;
 }
 nav{
 
@@ -34,6 +35,11 @@ margin:0;
 padding:0;
 }
 
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
 nav ul li:hover{
 
 color:#cccccc;
@@ -46,6 +52,18 @@ text-align:center;
 }
 section h1{
 font-size:40px;
+animation:fadeIn 3s ease;
+}
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0)
+}
 }
 
 button{
@@ -151,15 +169,15 @@ padding:20px;
 
 <h2>Hendry Digital</h2>
 <ul>
-<li>Home</li>
-<li>Tentang</li>
-<li>Layanan</li>
-<li>Kontak</li>
+<li><a href="#home">Home</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#kontak">Kontak</a></li>
 </ul>
 
 </nav>
 
-<section>
+<section id="home">
 
 <h1>Solusi Digital untuk Bisnis Anda</h1>
 
@@ -167,11 +185,11 @@ padding:20px;
 Kami membantu perusahaan membangun website profesional, modern, dan terpercaya.
 </p>
 
-<button>Hubungi Kami</button>
+<button onclick="location.href='#kontak' ">Hubungi Kami</button>
 
 </section>
 
-<section>
+<section id="tentang">
 
 <h2>Tentang Kami</h2>
 
@@ -185,7 +203,7 @@ Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis ber
 
 </section>
 
-<section>
+<section id="layanan">
 
 <h2>Layanan Kami</h2>
 
@@ -214,10 +232,7 @@ Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis ber
 
 </div>
 
-
-</section>
-
-<section>
+<section id="kontak">
 
 <h2>Kontak Kami</h2>
 
@@ -228,7 +243,10 @@ Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis ber
 <p>
 Siap membantu bisnis Anda berkembang melalui solusi digital.
 </p>
+
+<a href="https://wa.me/6287777986536" target="_blank">
 <button>Hubungi Kami</button>
+</a>
 
 </div>
 
