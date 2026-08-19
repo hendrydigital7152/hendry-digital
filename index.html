@@ -3,342 +3,245 @@
 
 <head>
 
+<title>Company Profile</title>
+
 <style>
 
+*{
+box-sizing:border-box;
+}
+
 body{
-font-family:Arial;
+         font-family: Arial, sans-serif;
+         margin:0;
 }
+nav{
 
-.container{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.card{
-background:#6F4E37;
+background:#1E3A5F;
 color:white;
-padding:25px;
-border-radius:15px;
-width:200px;
-text-align:center;
-transition:0.3s;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 25px rgba(0,0,0,0.3);
+nav ul{
+
+list-style:none;
+display:flex;
+gap:15px;
+margin:0;
+padding:0;
+}
+
+nav ul li:hover{
+
+color:#cccccc;
+cursor:pointer;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+section h1{
+font-size:40px;
 }
 
 button{
-background :white;
-color:#6F4E37;
-padding:10px 20px;
+
+background:#1E3A5F;
+color:white;
 border:none;
-border-radius:20px;
+padding:12px 25px;
+font-size:16px;
+border-radius:5px;
 cursor:pointer;
-transition:0.3s;
+}
+
+nav h2{
+
+margin:0;
+font-size:24px;
+}
+.service-container{
+
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.service-card{
+
+background:#1E3A5F;
+color:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 button:hover{
-background:#6F4E37;
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.about-box{
+
+background:#f2f2f2;
+padding:30px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+}
+
+.about-box p{
+line-height:1.6;
+}
+
+section h2{
+
+font-size:32px;
+margin-bottom:30px;
+}
+
+.contact-box{
+background:#222;
 color:white;
-transform:translateY(-3px);
+padding:40px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
 }
-
-.project button,
-.service-card button{
-      margin-bottom:20px;
+.contact-box button{
+background:white;
+color:#1E3A5F;
+font-weight:bold;
 }
-
-.portfolio{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-margin-bottom:50px;
-}
-
-.project{
-background:#6F4E37;
+.contact-box button:hover{
+background:#1E3A5F;
 color:white;
-width:250px;
-border-radius:15px;
-overflow:hidden;
-text-align:center;
-transition:0.3s;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-padding-bottom:20px;
-margin-bottom:20px;
-margin-left:auto;
-margin-right:auto;
 }
 
-.project img{
-width:100%;
-height:150px;
-object-fit:cover;
-}
+.contact-box h3{
 
-.project h2{
-padding:15px 10px 5px;
-font-size:22px;
-min-height:50px;
-}
-
-.project p{
-       padding:0 15px 20px;
-       line-height:1.6;
-}
-
-.project:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 25px rgba(0,0,0,0.3);
-}
-
-.testimonial-container{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-margin-top:50px;
-}
-
-.testimonial-card{
-background:#6F4E37;
-color:white;
-width:250px;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-transition:0.3s;
-}
-
-.testimonial-card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 25px rgba(0,0,0,0.3);
+font-size:28px;
+margin-bottom:15px;
 }
 
 footer{
-       background:#6F4E37;
-       color:white;
-       text-align:center;
-       padding:40px 20px;
-       margin-top:50px;
-}
-
-footer h3{
-        font-size:28px;
-        margin-bottom:15px;
-}
-
-footer p{
-       margin:10px;
-       line-height:1.6;
-}
-
-.whatsapp-btn{
-        position:fixed;
-        right:20px;
-        bottom:20px;
-        background:#25D366;
-        color:white;
-        padding:15px;
-        border-radius:50%;
-        text-decoration:none;
-        font-size:24px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<h1 style="text-align:center;">
-Layanan Hendry Digital
-</h1>
+<nav>
 
-<div class="container">
-<div class="card">
+<h2>Hendry Digital</h2>
+<ul>
+<li>Home</li>
+<li>Tentang</li>
+<li>Layanan</li>
+<li>Kontak</li>
+</ul>
 
-<h2>
-Website UMKM
-</h2>
+</nav>
+
+<section>
+
+<h1>Solusi Digital untuk Bisnis Anda</h1>
 
 <p>
-Website profesional untuk bisnis kecil
+Kami membantu perusahaan membangun website profesional, modern, dan terpercaya.
 </p>
 
-<button>
-Konsultasi
-</button>
+<button>Hubungi Kami</button>
 
-</div>
+</section>
 
-<div class="card">
+<section>
 
-<h2>
-Landing Page
-</h2>
+<h2>Tentang Kami</h2>
+
+<div class="about-box">
 
 <p>
-Halaman promosi produk atau jasa
-</p>
-
-<button>
-Konsultasi
-</button>
-
-</div>
-
-<div class="card">
-
-<h2>
-Company Profile
-</h2>
-
-<p>
-Website profil bisnis profesional
-</p>
-
-<button>
-Konsultasi
-</button>
-
-</div>
-</div>
-
-<h1 style="text-align:center; margin-top:50px;">
-Portfolio Hendry Digital
-</h1>
-
-<div class="portfolio">
-
-<div class="project">
-
-<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e">
-
-<h2>
-Kedai Kopi Nusantara
-</h2>
-
-<p>
-Website coffee shop modern untuk UMKM.
-</p>
-
-<button>
-Lihat Project
-</button>
-
-</div>
-
-<div class="project">
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
-
-<h2>
-Website Toko Online
-</h2>
-
-<p>
-Landing page produk bisnis.
-</p>
-
-<button>
-Lihat Project
-</button>
-
-</div>
-
-<div class="project">
-
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-
-<h2>
-Website Personal Branding
-</h2>
-
-<p>
-Website untuk menampilkan profil, layanan, dan karya profesional.
-</p>
-
-<button>
-Lihat Project
-</button>
-
-</div>
-
-</div>
-
-<section class="testimonial">
-
-<h1 style="text-align:center;">
-Testimonial
-</h1>
-
-<div class="testimonial-container">
-
-<div class="testimonial-card">
-
-<h3>
-Andi - Pemilik UMKM
-</h3>
-
-<p>
-"Website terlihat profesional dan membantu bisnis saya lebih dipercaya pelanggan."
+Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis berkembang melalui teknologi website.
 </p>
 
 </div>
 
-<div class="testimonial-card">
+</section>
 
-<h3>
-Sinta - Pengusaha Online
-</h3>
+<section>
+
+<h2>Layanan Kami</h2>
+
+<div class="service-container">
+
+<div class="service-card">
+
+<h3>Website Company Profile</h3>
+<p>Membangun website profesional untuk bisnis dan perusahaan.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Landing Page</h3>
+<p>Membuat halaman promosi yang menarik untuk produk Anda.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Toko Online</h3>
+<p>Membantu bisnis menjual produk secara online.</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+<section>
+
+<h2>Kontak Kami</h2>
+
+<div class="contact-box">
+
+<h3>Hubungi Kami</h3>
 
 <p>
-"Tampilan website modern dan memudahkan pelanggan menemukan informasi bisnis."
+Siap membantu bisnis Anda berkembang melalui solusi digital.
 </p>
+<button>Hubungi Kami</button>
 
 </div>
 
-<div class="testimonial-card">
-
-<h3>
-Budi - Penulis
-</h3>
-
-<p>
-"Hendry Digital membantu bisnis saya tampil lebih profesional di internet."
-</p>
-
-</div>
-</div>
 </section>
 
 <footer>
 
-<h3>
-Hendry Digital
-</h3>
-
 <p>
-Website profesional untuk UMKM dan bisnis modern.
-</p>
-
-<p>
-Email: hendrycandra@gmail.com
-</p>
-
-<p>
-Instagram: @hendry.digital
+© 2026 Hendry Digital. All Rights Reserved.
 </p>
 
 </footer>
-<a class="whatsapp-btn" href="https://wa.me/6287777986536" target="_blank">
-     ☎
-</a>
+
 </body>
+
 </html>
