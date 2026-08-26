@@ -3,263 +3,234 @@
 
 <head>
 
-<title>Company Profile</title>
+<title>Resto Rasa Nusantara</title>
 
 <style>
-
-*{
-box-sizing:border-box;
-}
-
 body{
          font-family: Arial, sans-serif;
-         margin:0;
-         scroll-behavior:smooth;
+         margin: 0;
 }
-nav{
 
-background:#1E3A5F;
-color:white;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+nav{
+       background: #333;
+       color: white;
+       padding: 15px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
 }
 
 nav ul{
-
-list-style:none;
-display:flex;
-gap:15px;
-margin:0;
-padding:0;
+           list-style: none;
+           display: flex;
+           gap: 15px;
+           margin: 0;
+           padding:0;
 }
-
 nav ul li a{
-color:white;
-text-decoration:none;
-}
-
-nav ul li:hover{
-
-color:#cccccc;
-cursor:pointer;
+        color:white;
+        text-decoration:none;
 }
 
 section{
-padding:60px 20px;
-text-align:center;
+             text-align: center;
+             padding: 80px 20px;
 }
 section h1{
-font-size:40px;
-animation:fadeIn 3s ease;
+       font-size:32px;
+       margin-bottom:20px;
 }
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(20px);
+section p{
+              font-size:16px;
+              margin-bottom:30px;
 }
-
-to{
-opacity:1;
-transform:translateY(0)
-}
-}
-
-button{
-
-background:#1E3A5F;
-color:white;
-border:none;
-padding:12px 25px;
-font-size:16px;
-border-radius:5px;
-cursor:pointer;
-}
-
-nav h2{
-
-margin:0;
-font-size:24px;
-}
-.service-container{
-
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-}
-.service-card{
-
-background:#1E3A5F;
-color:white;
-padding:25px;
-width:250px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.service-card:hover{
-transform:translateY(-10px);
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-
-button:hover{
-transform:translateY(-5px);
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-.about-box{
-
-background:#f2f2f2;
-padding:30px;
-border-radius:10px;
-max-width:700px;
-margin:auto;
-}
-
-.about-box p{
-line-height:1.6;
+.button{
+             display:inline-block;
+             background:#333;
+             color:white;
+             text-decoration:none;
+             padding:12px 25px;
+             font-size: 16px;
+             border-radius:5px;
 }
 
 section h2{
-
-font-size:32px;
-margin-bottom:30px;
+             font-size:28px;
+             margin-bottom:40px;
+}
+.menu-container{
+              display:flex;
+              justify-content:center;
+              gap:30px;
+              flex-wrap:wrap;
+}
+.menu-card{
+              background:#f5f5f5;
+              width:250px;
+              padding:25px;
+              border-radius:10px;
+              text-align:center;
+              box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.contact-box{
-background:#222;
-color:white;
-padding:40px;
-border-radius:10px;
-max-width:700px;
-margin:auto;
+.menu-card img{
+             width:100%;
+             border-radius:10px;
 }
-.contact-box button{
-background:white;
-color:#1E3A5F;
-font-weight:bold;
-}
-.contact-box button:hover{
-background:#1E3A5F;
-color:white;
+.menu-card h4{
+              font-size:20px;
+              margin-top:15px;
 }
 
-.contact-box h3{
-
-font-size:28px;
-margin-bottom:15px;
+.gallery-container{
+           display:flex;
+            justify-content:center;
+           gap:20px;
+           flex-wrap:wrap;
+}
+.gallery-container img{
+           width:250px;
+           height:180px;
+           object-fit:cover;
+           border-radius:10px;
 }
 
 footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
+           background:#333;
+           color:white;
+           text-align:center;
+           padding:20px;
 }
 
 </style>
 
 </head>
 
-<body>
+<body> 
 
 <nav>
 
-<h2>Hendry Digital</h2>
+<h2>Resto Rasa Nusantara</h2>
+
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#tentang">Tentang</a></li>
-<li><a href="#layanan">Layanan</a></li>
-<li><a href="#kontak">Kontak</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#galeri">Galeri</a></li>
 </ul>
 
 </nav>
 
 <section id="home">
 
-<h1>Solusi Digital untuk Bisnis Anda</h1>
+<h1>
+Selamat Datang <br>
+Di Resto Rasa Nusantara
+</h1>
 
 <p>
-Kami membantu perusahaan membangun website profesional, modern, dan terpercaya.
+Nikmati cita rasa masakan Nusantara dengan suasana yang nyaman.
 </p>
 
-<button onclick="location.href='#kontak' ">Hubungi Kami</button>
+<a href="https://wa.me/6287777986536" target="_blank" class="button">Pesan Sekarang</a>
 
 </section>
 
-<section id="tentang">
+<section id="menu">
 
-<h2>Tentang Kami</h2>
+<h2>Menu Favorit Kami</h2>
 
-<div class="about-box">
+<div class="menu-container">
 
-<p>
-Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis berkembang melalui teknologi website.
-</p>
+<div class="menu-card">
+<img src="foto1.jpg" alt="Nasi Goreng">
+<h3>Nasi Goreng Nusantara</h3>
+<p>Nasi goreng khas dengan rempah pilihan</p>
+<h4>Rp25.000</h4>
 
-</div>
-
-</section>
-
-<section id="layanan">
-
-<h2>Layanan Kami</h2>
-
-<div class="service-container">
-
-<div class="service-card">
-
-<h3>Website Company Profile</h3>
-<p>Membangun website profesional untuk bisnis dan perusahaan.</p>
-
-</div>
-
-<div class="service-card">
-
-<h3>Landing Page</h3>
-<p>Membuat halaman promosi yang menarik untuk produk Anda.</p>
-
-</div>
-
-<div class="service-card">
-
-<h3>Toko Online</h3>
-<p>Membantu bisnis menjual produk secara online.</p>
-
-</div>
-
-</div>
-
-<section id="kontak">
-
-<h2>Kontak Kami</h2>
-
-<div class="contact-box">
-
-<h3>Hubungi Kami</h3>
-
-<p>
-Siap membantu bisnis Anda berkembang melalui solusi digital.
-</p>
-
-<a href="https://wa.me/6287777986536" target="_blank">
-<button>Hubungi Kami</button>
+<a href="https://wa.me/6287777986536?text=Saya%20ingin%20pesan%20Nasi%20Goreng%20Nusantara" target="_blank" class="button">
+Pesan Menu
 </a>
 
 </div>
 
+<div class="menu-card">
+<img src="foto2.jpg" alt="Ayam Bakar">
+<h3>Ayam Bakar Tradisional</h3>
+<p>Ayam bakar dengan bumbu khas sederhana</p>
+<h4>Rp35.000</h4>
+<a href="https://wa.me/6287777986536?text=Saya%20ingin%20pesan%20Ayam%20Bakar%20Tradisional" target="_blank" class="button">
+Pesan Menu
+</a>
+
+</div>
+
+<div class="menu-card">
+<img src="foto3.jpg" alt="Soto">
+<h3>Soto Nusantara</h3>
+<p>Kuah hangat dengan cita rasa daerah</p>
+<h4>Rp30.000</h4>
+<a href="https://wa.me/6287777986536?text=Saya%20ingin%20pesan%20Soto%20Nusantara" target="_blank" class="button">
+Pesan Menu
+</a>
+
+</div>
+
+</div>
+
+</section> 
+ 
+<section id="tentang">
+
+<h2>Tentang Resto Kami</h2>
+
+<p>
+Resto Rasa Nusantara menghadirkan berbagai hidangan khas Indonesia dengan cita rasa autentik dan bahan pilihan.
+</p>
+
+<p>
+Kami menyajikan pengalaman makan yang nyaman dengan suasana hangat untuk keluarga dan teman.
+</p>
+
+</section>
+
+<section id="galeri">
+
+<h2>Galeri Resto</h2>
+
+<div class="gallery-container">
+
+<img src="foto1.jpg" alt="Menu Resto">
+<img src="foto2.jpg" alt="Suasana Resto">
+<img src="foto3.jpg" alt="Hidangan Resto">
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2>Hubungi Kami</h2>
+
+<p>Siap menikmati cita rasa Nusantara?</p>
+
+<p>Hubungi kami untuk pemesanan dan informasi lebih lanjut.</p>
+
+<p>📍 Jl. Nusantara No. 10</p>
+
+<p>⏰ Buka setiap hari : 10.00 - 22.00</p>
+
+<a href="https://wa.me/6287777986536" target="_blank" class="button">Chat WhatsApp</a>
+
 </section>
 
 <footer>
-
-<p>
-© 2026 Hendry Digital. All Rights Reserved.
-</p>
-
+<p>© 2026 Resto Rasa Nusantara</p>
+<p>Selamat menikmati cita rasa Nusantara</p>
 </footer>
 
 </body>
 
 </html>
+
+
