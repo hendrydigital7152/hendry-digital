@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>notepad</title>
+</head>
+<style type="text/css">
+ol,ul{
+display:block;
+list-style-type:none;
+margin:3px;
+}
+</style><body>
+<div>&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+<br>
+&lt;head&gt;<br>
+<br>
+&lt;title&gt;Kedai Kopi Nusantara | Website Coffee Shop&lt;/title&gt;<br>
+&lt;meta name="description" content="Kedai Kopi Nusantara menghadirkan kopi pilihan Indonesia dan layanan website profesional untuk UMKM."&gt;<br>
+<br>
+&lt;style&gt;<br>
+<br>
+body{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin :0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#F8F1E7;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scroll-behavior:smooth;<br>
+}<br>
+<br>
+nav{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content:space-between;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; align-items:center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:15px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#6F4E37;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow:0 2px 10px #ccc;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position:sticky;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; top:0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; z-index:100;<br>
+}<br>
+nav h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:28px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+}<br>
+.menu{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap:20px;<br>
+}<br>
+.menu a{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:18px;<br>
+}<br>
+.menu a:hover{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:#D2A679;<br>
+}<br>
+<br>
+.hero{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:40px 20px;<br>
+}<br>
+<br>
+.hero h1{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:36px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom:20px;<br>
+}<br>
+<br>
+.hero p{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:18px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom:30px;<br>
+}<br>
+<br>
+.hero .order-btn{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#6F4E37;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:15px 30px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:30px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:18px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:inline-block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:10px;<br>
+}<br>
+<br>
+.hero .order-btn:hover{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#4B2E1F;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:scale(1.05);<br>
+}<br>
+.about{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+}<br>
+.about h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:36px;<br>
+}<br>
+<br>
+section{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-sizing:border-box;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scroll-margin-top:80px;<br>
+}<br>
+<br>
+.services{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#f5f5f5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+}<br>
+.services h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:36px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+}<br>
+.service-container{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content:center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-wrap:wrap;<br>
+}<br>
+<br>
+.card{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#FFF8F0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:25px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:15px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width:250px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; min-height:150px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow:0 5px 15px #ddd;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition:0.3s ease;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overflow:hidden;<br>
+}<br>
+.card img{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width:100%;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height:150px;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object-fit:cover;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:15px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition:0.3s ease;<br>
+}<br>
+.card:hover img{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:scale(1.1);<br>
+}<br>
+<br>
+.card h3{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:24px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-bottom:15px;<br>
+}<br>
+<br>
+.card p{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:16px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line-height:1.6;<br>
+}<br>
+<br>
+.price{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight:bold;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:#6F4E37;<br>
+}<br>
+<br>
+.order-btn{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:inline-block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#6F4E37;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:10px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border:none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:16px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition:0.3s ease;<br>
+}<br>
+<br>
+.order-btn:hover{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#4B2E1F;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:scale(1.05);<br>
+}<br>
+<br>
+.card:hover{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:translateY(-10px) scale(1.03);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-shadow:0 10px 20px #ccc;<br>
+}<br>
+<br>
+.portfolio{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#FFF8F0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+}<br>
+<br>
+.portfolio h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:36px;<br>
+}<br>
+.gallery-card{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#F8F1E7;<br>
+}<br>
+.gallery-card h3{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:#4B2E1F;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:26px;<br>
+}<br>
+.contact{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#f5f5f5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+}<br>
+.contact h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:36px;<br>
+}<br>
+.testimonial{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
+}<br>
+.testimonial h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:36px;<br>
+}<br>
+<br>
+footer{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#222;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+}<br>
+<br>
+.whatsapp-btn{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; position:fixed;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bottom:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; right:20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#25D366;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:15px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:50%;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:24px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; z-index:200;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition:0.3s ease;<br>
+}<br>
+.whatsapp-btn:hover{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:scale(1.1);<br>
+}<br>
+.fade-in{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; opacity:0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:translateY(30px);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transition:0.8s ease;<br>
+}<br>
+.fade-in.show{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; opacity:1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transform:translateY(0);<br>
+}<br>
+<br>
+@media(max-width:600px){<br>
+nav{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction:column;<br>
+}<br>
+.menu{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-top:10px;<br>
+}<br>
+.hero h1{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:28px;<br>
+}<br>
+.hero p{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:16px;<br>
+}<br>
+.card{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width:90%;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:15px auto;<br>
+}<br>
+.hero .order-btn{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:16px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:12px 25px;<br>
+}<br>
+nav h2{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:22px;<br>
+}<br>
+.menu{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap:10px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-wrap:wrap;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content:center;<br>
+}<br>
+.contact .card{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width:90%;<br>
+}<br>
+<br>
+}&nbsp; <br>
+&lt;/style&gt;<br>
+<br>
+&lt;/head&gt;<br>
+<br>
+&lt;body&gt;<br>
+<br>
+&lt;nav&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;h2&gt;Kedai Kopi Nusantara&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="menu"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#home"&gt;Home&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#tentang"&gt;Tentang&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#layanan"&gt;Layanan&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#menu"&gt;Menu&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#kontak"&gt;Kontak&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&lt;/nav&gt;<br>
+<br>
+&lt;section id="home" class="hero"&gt;<br>
+<br>
+&lt;h1&gt;Selamat Datang di Kedai Kopi Nusantara&lt;/h1&gt;<br>
+<br>
+&lt;p&gt;Nikmati kopi pilihan dengan cita rasa khas Indonesia.&lt;/p&gt;<br>
+<br>
+&lt;p&gt;<br>
+Kami membantu UMKM memiliki website profesional, modern, dan mudah digunakan.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;a class="order-btn" href="#menu"&gt;<br>
+Lihat Menu<br>
+&lt;/a&gt;<br>
+<br>
+&lt;a class="order-btn" href="#layanan"&gt;<br>
+Lihat Layanan Website<br>
+&lt;/a&gt;<br>
+<br>
+&lt;/section&gt;<br>
+&lt;section id="tentang" class="about fade-in"&gt;<br>
+&lt;h2&gt;Tentang Kami&lt;/h2&gt;<br>
+&lt;p&gt;<br>
+Kedai Kopi Nusantara menghadirkan kopi pilihan dengan cita rasa khas Indonesia, dibuat dari biji kopi berkualitas untuk menemani setiap momen.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+&lt;section class="about fade-in"&gt;<br>
+&lt;h2&gt;Tentang Developer&lt;/h2&gt;<br>
+&lt;p&gt;<br>
+Saya membantu bisnis dan UMKM membuat website profesional yang modern, responsive, dan mudah digunakan untuk meningkatkan kepercayaan pelanggan.<br>
+&lt;/p&gt;<br>
+&lt;/section&gt;<br>
+<br>
+&lt;section class="about fade-in"&gt;<br>
+&lt;h2&gt;Kenapa Memilih Kami?&lt;/h2&gt;<br>
+&lt;div class="service-container"&gt;<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;&#9749; Kopi Berkualitas&lt;/h3&gt;<br>
+&lt;p&gt;Menggunakan pilihan biji kopi terbaik dengan cita rasa khas Indonesia. &lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;&#128187; Website Profesional&lt;/h3&gt;<br>
+&lt;p&gt;Membantu UMKM memiliki website modern untuk meningkatkan kepercayaan pelanggan.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;&#128640; Pelayanan Terbaik&lt;/h3&gt;<br>
+&lt;p&gt;Memberikan layanan yang mudah, cepat, dan sesuai kebutuhan bisnis.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+&lt;section id="layanan" class="services fade-in"&gt;<br>
+<br>
+&lt;h2&gt;Layanan Website&lt;/h2&gt;<br>
+<br>
+&lt;p&gt;<br>
+Saya membantu membuat website profesional untuk bisnis, UMKM, dan personal branding.<br>
+&lt;/p&gt;<br>
+<br>
+&lt;div class="service-container"&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Website Bisnis&lt;/h3&gt;<br>
+&lt;p&gt;Membuat website profesional untuk memperkenalkan bisnis dan meningkatkan kepercayaan pelanggan.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Landing Page&lt;/h3&gt;<br>
+&lt;p&gt; Membuat halaman promosi produk yang menarik dan fokus meningkatkan penjualan.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Toko Online&lt;/h3&gt;<br>
+&lt;p&gt;Membuat website jualan dengan tampilan modern dan mudah digunakan.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+&lt;section id="menu" class="services fade-in"&gt;<br>
+<br>
+&lt;h2&gt;Menu Kopi&lt;/h2&gt;<br>
+<br>
+&lt;div class="service-container"&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Kopi Nusantara"&gt;<br>
+&lt;h3&gt;Kopi Nusantara&lt;/h3&gt;<br>
+&lt;p&gt;Kopi pilihan dengan cita rasa khas dari berbagai daerah Indonesia.&lt;/p&gt;<br>
+&lt;p class="price"&gt;Rp 25.000&lt;/p&gt;<br>
+&lt;a class="order-btn" href="https://wa.me/6287777986536" target="_blank"&gt;<br>
+Pesan Sekarang<br>
+&lt;/a&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Kopi Susu"&gt;<br>
+&lt;h3&gt;Kopi Susu&lt;/h3&gt;<br>
+&lt;p&gt;Kombinasi kopi dan susu dengan rasa creamy yang nikmat.&lt;/p&gt;<br>
+&lt;p class="price"&gt;Rp 20.000&lt;/p&gt;<br>
+&lt;a class="order-btn" href="https://wa.me/628xxxxxxxxxx"&gt;<br>
+Pesan Sekarang<br>
+&lt;/a&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Kopi Hitam"&gt;<br>
+&lt;h3&gt;Kopi Hitam&lt;/h3&gt;<br>
+&lt;p&gt;Kopi murni dengan aroma kuat dan rasa khas nusantara.&lt;/p&gt;<br>
+&lt;p class="price"&gt;Rp 18.000&lt;/p&gt;<br>
+&lt;a class="order-btn" href="https://wa.me/628xxxxxxxxxx"&gt;<br>
+Pesan Sekarang<br>
+&lt;/a&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+&lt;section class="portfolio"&gt;<br>
+<br>
+&lt;h2&gt;Galeri Kopi&lt;/h2&gt;<br>
+<br>
+&lt;div class="service-container"&gt;<br>
+<br>
+&lt;div class="card gallery-card"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e" alt="Kopi Arabika"&gt;<br>
+&lt;h3&gt;Kopi Arabika&lt;/h3&gt;<br>
+&lt;p&gt;Kopi dengan aroma khas dan cita rasa lembut dari pilihan terbaik.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card gallery-card"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Kopi Robusta"&gt;<br>
+&lt;h3&gt;Kopi Robusta&lt;/h3&gt;<br>
+&lt;p&gt;Kopi dengan rasa kuat dan aroma khas yang nikmat.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card gallery-card"&gt;<br>
+&lt;img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a" alt="Kopi Espresso"&gt;<br>
+&lt;h3&gt;Kopi Espresso&lt;/h3&gt;<br>
+&lt;p&gt;Kopi dengan rasa kuat dan aroma khas untuk pecinta kopi.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+&lt;section class="testimonial"&gt;<br>
+<br>
+&lt;h2&gt;Apa Kata Pelanggan&lt;/h2&gt;<br>
+<br>
+&lt;div class="service-container"&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Andi&lt;/h3&gt;<br>
+&lt;p&gt;"Kopi sangat enak, tempat nyaman dan pelayanan ramah."&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Sinta&lt;/h3&gt;<br>
+&lt;p&gt;"Kopi susu favorit saya, pasti datang lagi."&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Budi&lt;/h3&gt;<br>
+&lt;p&gt;"Rasa kopi khas Indonesia yang luar biasa."&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;section id="kontak" class="contact"&gt;<br>
+<br>
+&lt;h2&gt;Kontak&lt;/h2&gt;<br>
+<br>
+&lt;div class="service-container"&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Email&lt;/h3&gt;<br>
+&lt;p&gt;hendry@email.com&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+<br>
+&lt;h3&gt;WhatsApp&lt;/h3&gt;<br>
+&lt;p&gt;Hubungi kami untuk pemesanan dan informasi lebih lanjut.&lt;/p&gt;<br>
+&lt;a class="order-btn" href="https://wa.me/6287777986536" target="_blank"&gt;<br>
+Chat WhatsApp<br>
+&lt;/a&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Lokasi&lt;/h3&gt;<br>
+&lt;p&gt;Kunjungi Kedai Kopi Nusantara.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Jam Operasional&lt;/h3&gt;<br>
+&lt;p&gt;Senin - Minggu&lt;/p&gt;<br>
+&lt;p&gt;08.00 - 22.00&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="card"&gt;<br>
+&lt;h3&gt;Sosial Media&lt;/h3&gt;<br>
+&lt;p&gt;Instagram: @kedai_kopi&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+&lt;a class="whatsapp-btn" href="https://wa.me/6287777986536" target="_blank"&gt;<br>
+&#9742;<br>
+&lt;/a&gt;<br>
+<br>
+&lt;footer&gt;<br>
+<br>
+&lt;h3&gt;Kedai Kopi Nusantara&lt;/h3&gt;<br>
+&lt;p&gt;Website profesional untuk bisnis dan UMKM Indonesia.&lt;/p&gt;<br>
+&lt;p&gt;&#169; 2026 Kedai Kopi Nusantara | Website dibuat oleh Hendry Digital&lt;/p&gt;<br>
+<br>
+&lt;/footer&gt;<br>
+<br>
+&lt;script&gt;<br>
+const elements = document.querySelectorAll(".fade-in");<br>
+function showElements(){<br>
+elements.forEach((el)=&gt;{<br>
+const position = el.getBoundingClientRect().top;<br>
+<br>
+if(position &lt; window.innerHeight - 100){<br>
+el.classList.add("show");<br>
+}<br>
+});<br>
+}<br>
+window.addEventListener("scroll", showElements);<br>
+showElements();<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+<br>
+&lt;/html&gt;</div>
+</body>
+</html>
