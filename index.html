@@ -1,346 +1,329 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
-</head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
+
+<title>Hendry.Digital</title>
+
+<style>
+
+*{
+box-sizing:border-box;
 }
-</style><body>
-<div>&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-<br>
-&lt;head&gt;<br>
-<br>
-&lt;title&gt;Hendry.Digital&lt;/title&gt;<br>
-<br>
-&lt;style&gt;<br>
-<br>
-*{<br>
-box-sizing:border-box;<br>
-}<br>
-<br>
-body{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:0;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scroll-behavior:smooth;<br>
-}<br>
-nav{<br>
-<br>
-background:#1E3A5F;<br>
-color:white;<br>
-padding:15px;<br>
-display:flex;<br>
-justify-content:space-between;<br>
-align-items:center;<br>
-}<br>
-<br>
-nav ul{<br>
-<br>
-list-style:none;<br>
-display:flex;<br>
-gap:15px;<br>
-margin:0;<br>
-padding:0;<br>
-}<br>
-<br>
-nav ul li a{<br>
-color:white;<br>
-text-decoration:none;<br>
-}<br>
-<br>
-nav ul li:hover{<br>
-<br>
-color:#cccccc;<br>
-cursor:pointer;<br>
-}<br>
-<br>
-section{<br>
-padding:60px 20px;<br>
-text-align:center;<br>
-}<br>
-section h1{<br>
-font-size:40px;<br>
-animation:fadeIn 3s ease;<br>
-}<br>
-@keyframes fadeIn{<br>
-from{<br>
-opacity:0;<br>
-transform:translateY(20px);<br>
-}<br>
-<br>
-to{<br>
-opacity:1;<br>
-transform:translateY(0)<br>
-}<br>
-}<br>
-<br>
-button{<br>
-<br>
-background:#1E3A5F;<br>
-color:white;<br>
-border:none;<br>
-padding:12px 25px;<br>
-font-size:16px;<br>
-border-radius:5px;<br>
-cursor:pointer;<br>
-}<br>
-<br>
-.portfolio-btn{<br>
-background:white;<br>
-color:#1E3A5F;<br>
-border:2px solid white;<br>
-padding:10px 20px;<br>
-border-radius:5px;<br>
-cursor:pointer;<br>
-}<br>
-<br>
-nav h2{<br>
-<br>
-margin:0;<br>
-font-size:24px;<br>
-}<br>
-.service-container{<br>
-<br>
-display:flex;<br>
-gap:30px;<br>
-justify-content:center;<br>
-flex-wrap:wrap;<br>
-}<br>
-.service-card{<br>
-<br>
-background:#1E3A5F;<br>
-color:white;<br>
-padding:25px;<br>
-width:250px;<br>
-border-radius:10px;<br>
-box-shadow:0 5px 15px rgba(0,0,0,0.2);<br>
-}<br>
-<br>
-.service-card:hover{<br>
-transform:translateY(-10px);<br>
-box-shadow:0 10px 25px rgba(0,0,0,0.3);<br>
-}<br>
-<br>
-button:hover{<br>
-transform:translateY(-5px);<br>
-box-shadow:0 5px 15px rgba(0,0,0,0.3);<br>
-}<br>
-<br>
-.about-box{<br>
-<br>
-background:#f2f2f2;<br>
-padding:30px;<br>
-border-radius:10px;<br>
-max-width:700px;<br>
-margin:auto;<br>
-}<br>
-<br>
-.about-box p{<br>
-line-height:1.6;<br>
-}<br>
-<br>
-section h2{<br>
-<br>
-font-size:32px;<br>
-margin-bottom:30px;<br>
-}<br>
-<br>
-.contact-box{<br>
-background:#222;<br>
-color:white;<br>
-padding:40px;<br>
-border-radius:10px;<br>
-max-width:700px;<br>
-margin:auto;<br>
-}<br>
-.contact-box button{<br>
-background:white;<br>
-color:#1E3A5F;<br>
-font-weight:bold;<br>
-}<br>
-.contact-box button:hover{<br>
-background:#1E3A5F;<br>
-color:white;<br>
-}<br>
-<br>
-.contact-box h3{<br>
-<br>
-font-size:28px;<br>
-margin-bottom:15px;<br>
-}<br>
-<br>
-footer{<br>
-background:#222;<br>
-color:white;<br>
-text-align:center;<br>
-padding:20px;<br>
-}<br>
-<br>
-&lt;/style&gt;<br>
-<br>
-&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-<br>
-&lt;nav&gt;<br>
-<br>
-&lt;h2&gt;Hendry Digital&lt;/h2&gt;<br>
-&lt;ul&gt;<br>
-&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li&gt;&lt;a href="#tentang"&gt;Tentang&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li&gt;&lt;a href="#layanan"&gt;Layanan&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li&gt;&lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li&gt;&lt;a href="#kontak"&gt;Kontak&lt;/a&gt;&lt;/li&gt;<br>
-&lt;/ul&gt;<br>
-<br>
-&lt;/nav&gt;<br>
-<br>
-&lt;section id="home"&gt;<br>
-<br>
-&lt;h1&gt;Solusi Digital untuk Bisnis Anda&lt;/h1&gt;<br>
-<br>
-&lt;p&gt;<br>
-Kami membantu perusahaan membangun website profesional, modern, dan terpercaya.<br>
-&lt;/p&gt;<br>
-<br>
-<br>
-&lt;button onclick="location.href='#kontak' "&gt;Hubungi Kami&lt;/button&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="tentang"&gt;<br>
-<br>
-&lt;h2&gt;Tentang Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="about-box"&gt;<br>
-<br>
-&lt;p&gt;<br>
-Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis berkembang melalui teknologi website.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="layanan"&gt;<br>
-<br>
-&lt;h2&gt;Layanan Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="service-container"&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Website Company Profile&lt;/h3&gt;<br>
-&lt;p&gt;Membangun website profesional untuk bisnis dan perusahaan.&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Landing Page&lt;/h3&gt;<br>
-&lt;p&gt;Membuat halaman promosi yang menarik untuk produk Anda.&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Toko Online&lt;/h3&gt;<br>
-&lt;p&gt;Membantu bisnis menjual produk secara online.&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="portfolio"&gt;<br>
-<br>
-&lt;h2&gt;Portfolio Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="service-container"&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-&lt;h3&gt;Klinik Sehat Sentosa&lt;/h3&gt;<br>
-&lt;p&gt;Website layanan kesehatan profesional.&lt;/p&gt;<br>
-<br>
-&lt;a href="https://hendrydigital7152.github.io/Klinik-Sehat-Sentosa/" target="_blank"&gt;<br>
-&lt;button class="portfolio-btn"&gt;Lihat Website&lt;/button&gt;<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-&lt;h3&gt;Resto Rasa Nusantara&lt;/h3&gt;<br>
-&lt;p&gt;Website bisnis kuliner UMKM.&lt;/p&gt;<br>
-<br>
-&lt;a href="https://hendrydigital7152.github.io/hendry-digital/resto.html" target="_blank"&gt;<br>
-&lt;button class="portfolio-btn"&gt;Lihat Website&lt;/button&gt;<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Kedai Kopi Nusantara&lt;/h3&gt;<br>
-&lt;p&gt;Website coffee shop modern.&lt;/p&gt;<br>
-<br>
-&lt;a href="https://hendrydigital7152.github.io/hendry-digital/kedai-kopi-nusantara.html" target="_blank"&gt;<br>
-&lt;button class="portfolio-btn"&gt;Lihat Website&lt;/button&gt;<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-&lt;h3&gt;Company Profile&lt;/h3&gt;<br>
-&lt;p&gt;Website profil perusahaan.&lt;/p&gt;<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-&lt;h3&gt;Bengkel Maju Jaya&lt;/h3&gt;<br>
-&lt;p&gt;Website jasa otomotif.&lt;/p&gt;<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="kontak"&gt;<br>
-<br>
-&lt;h2&gt;Kontak Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="contact-box"&gt;<br>
-<br>
-&lt;h3&gt;Hubungi Kami&lt;/h3&gt;<br>
-<br>
-&lt;p&gt;<br>
-Siap membantu bisnis Anda berkembang melalui solusi digital.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;a href="https://wa.me/6287777986536" target="_blank"&gt;<br>
-&lt;button&gt;Hubungi Kami&lt;/button&gt;<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;footer&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#169; 2026 Hendry Digital. All Rights Reserved.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/footer&gt;<br>
-<br>
-&lt;/body&gt;<br>
-<br>
-&lt;/html&gt; <br>
+
+body{
+         font-family: Arial, sans-serif;
+         margin:0;
+         scroll-behavior:smooth;
+}
+nav{
+
+background:#1E3A5F;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+
+list-style:none;
+display:flex;
+gap:15px;
+margin:0;
+padding:0;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li:hover{
+
+color:#cccccc;
+cursor:pointer;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+section h1{
+font-size:40px;
+animation:fadeIn 3s ease;
+}
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0)
+}
+}
+
+button{
+
+background:#1E3A5F;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.portfolio-btn{
+background:white;
+color:#1E3A5F;
+border:2px solid white;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+nav h2{
+
+margin:0;
+font-size:24px;
+}
+.service-container{
+
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.service-card{
+
+background:#1E3A5F;
+color:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+button:hover{
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.about-box{
+
+background:#f2f2f2;
+padding:30px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+}
+
+.about-box p{
+line-height:1.6;
+}
+
+section h2{
+
+font-size:32px;
+margin-bottom:30px;
+}
+
+.contact-box{
+background:#222;
+color:white;
+padding:40px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+}
+.contact-box button{
+background:white;
+color:#1E3A5F;
+font-weight:bold;
+}
+.contact-box button:hover{
+background:#1E3A5F;
+color:white;
+}
+
+.contact-box h3{
+
+font-size:28px;
+margin-bottom:15px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>Hendry Digital</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+</nav>
+
+<section id="home">
+
+<h1>Solusi Digital untuk Bisnis Anda</h1>
+
+<p>
+Kami membantu perusahaan membangun website profesional, modern, dan terpercaya.
+</p>
+
+
+<button onclick="location.href='#kontak' ">Hubungi Kami</button>
+
+</section>
+
+<section id="tentang">
+
+<h2>Tentang Kami</h2>
+
+<div class="about-box">
+
+<p>
+Kami adalah perusahaan yang menyediakan solusi digital untuk membantu bisnis berkembang melalui teknologi website.
+</p>
+
 </div>
+
+</section>
+
+<section id="layanan">
+
+<h2>Layanan Kami</h2>
+
+<div class="service-container">
+
+<div class="service-card">
+
+<h3>Website Company Profile</h3>
+<p>Membangun website profesional untuk bisnis dan perusahaan.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Landing Page</h3>
+<p>Membuat halaman promosi yang menarik untuk produk Anda.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Toko Online</h3>
+<p>Membantu bisnis menjual produk secara online.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2>Portfolio Kami</h2>
+
+<div class="service-container">
+
+<div class="service-card">
+<h3>Klinik Sehat Sentosa</h3>
+<p>Website layanan kesehatan profesional.</p>
+
+<a href="https://hendrydigital7152.github.io/Klinik-Sehat-Sentosa/" target="_blank">
+<button class="portfolio-btn">Lihat Website</button>
+</a>
+
+</div>
+
+<div class="service-card">
+<h3>Resto Rasa Nusantara</h3>
+<p>Website bisnis kuliner UMKM.</p>
+
+<a href="https://hendrydigital7152.github.io/hendry-digital/resto.html" target="_blank">
+<button class="portfolio-btn">Lihat Website</button>
+</a>
+
+</div>
+
+<div class="service-card">
+
+<h3>Kedai Kopi Nusantara</h3>
+<p>Website coffee shop modern.</p>
+
+<a href="https://hendrydigital7152.github.io/hendry-digital/kedai-kopi-nusantara.html" target="_blank">
+<button class="portfolio-btn">Lihat Website</button>
+</a>
+
+</div>
+
+<div class="service-card">
+<h3>Company Profile</h3>
+<p>Website profil perusahaan.</p>
+</div>
+
+<div class="service-card">
+<h3>Bengkel Maju Jaya</h3>
+<p>Website jasa otomotif.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2>Kontak Kami</h2>
+
+<div class="contact-box">
+
+<h3>Hubungi Kami</h3>
+
+<p>
+Siap membantu bisnis Anda berkembang melalui solusi digital.
+</p>
+
+<a href="https://wa.me/6287777986536" target="_blank">
+<button>Hubungi Kami</button>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Hendry Digital. All Rights Reserved.
+</p>
+
+</footer>
+
 </body>
-</html>
+
+</html> 
