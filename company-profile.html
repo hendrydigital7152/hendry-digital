@@ -1,267 +1,251 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
-</head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
+
+<title>Company Profile</title>
+
+<style>
+
+*{
+box-sizing:border-box;
 }
-</style><body>
-<div>&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-<br>
-&lt;head&gt;<br>
-<br>
-&lt;title&gt;Company Profile&lt;/title&gt;<br>
-<br>
-&lt;style&gt;<br>
-<br>
-*{<br>
-box-sizing:border-box;<br>
-}<br>
-<br>
-body{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:0;<br>
-}<br>
-nav{<br>
-<br>
-background:#D6B56E;<br>
-color:white;<br>
-padding:15px;<br>
-display:flex;<br>
-justify-content:space-between;<br>
-align-items:center;<br>
-}<br>
-<br>
-nav ul{<br>
-<br>
-list-style:none;<br>
-display:flex;<br>
-gap:15px;<br>
-margin:0;<br>
-padding:0;<br>
-}<br>
-<br>
-nav ul li:hover{<br>
-<br>
-color:#cccccc;<br>
-cursor:pointer;<br>
-}<br>
-<br>
-section{<br>
-padding:60px 20px;<br>
-text-align:center;<br>
-}<br>
-section h1{<br>
-font-size:40px;<br>
-}<br>
-<br>
-button{<br>
-<br>
-background:#B08A3E;<br>
-color:white;<br>
-border:none;<br>
-padding:12px 25px;<br>
-font-size:16px;<br>
-border-radius:5px;<br>
-cursor:pointer;<br>
-}<br>
-<br>
-nav h2{<br>
-<br>
-margin:0;<br>
-font-size:24px;<br>
-}<br>
-.service-container{<br>
-<br>
-display:flex;<br>
-gap:30px;<br>
-justify-content:center;<br>
-flex-wrap:wrap;<br>
-}<br>
-.service-card{<br>
-<br>
-background:#B08A3E;<br>
-color:white;<br>
-padding:25px;<br>
-width:250px;<br>
-border-radius:10px;<br>
-box-shadow:0 5px 15px rgba(0,0,0,0.2);<br>
-}<br>
-<br>
-.service-card:hover{<br>
-transform:translateY(-10px);<br>
-box-shadow:0 10px 25px rgba(0,0,0,0.3);<br>
-}<br>
-<br>
-button:hover{<br>
-transform:translateY(-5px);<br>
-box-shadow:0 5px 15px rgba(0,0,0,0.3);<br>
-}<br>
-<br>
-.about-box{<br>
-<br>
-background:#f2f2f2;<br>
-padding:30px;<br>
-border-radius:10px;<br>
-max-width:700px;<br>
-margin:auto;<br>
-}<br>
-<br>
-.about-box p{<br>
-line-height:1.6;<br>
-}<br>
-<br>
-section h2{<br>
-<br>
-font-size:32px;<br>
-margin-bottom:30px;<br>
-}<br>
-<br>
-.contact-box{<br>
-background:#222;<br>
-color:white;<br>
-padding:40px;<br>
-border-radius:10px;<br>
-max-width:700px;<br>
-margin:auto;<br>
-}<br>
-.contact-box button{<br>
-background:white;<br>
-color:#8A6A2F;<br>
-font-weight:bold;<br>
-}<br>
-.contact-box button:hover{<br>
-background:#8A6A2F;<br>
-color:white;<br>
-}<br>
-<br>
-.contact-box h3{<br>
-<br>
-font-size:28px;<br>
-margin-bottom:15px;<br>
-}<br>
-<br>
-footer{<br>
-background:#222;<br>
-color:white;<br>
-text-align:center;<br>
-padding:20px;<br>
-}<br>
-<br>
-&lt;/style&gt;<br>
-<br>
-&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-<br>
-&lt;nav&gt;<br>
-<br>
-&lt;h2&gt;PT MAJU BERSAMA&lt;/h2&gt;<br>
-&lt;ul&gt;<br>
-&lt;li&gt;Home&lt;/li&gt;<br>
-&lt;li&gt;Tentang&lt;/li&gt;<br>
-&lt;li&gt;Layanan&lt;/li&gt;<br>
-&lt;li&gt;Kontak&lt;/li&gt;<br>
-&lt;/ul&gt;<br>
-<br>
-&lt;/nav&gt;<br>
-<br>
-&lt;section&gt;<br>
-<br>
-&lt;h1&gt;Solusi Terbaik untuk Kebutuhan Bisnis Anda&lt;/h1&gt;<br>
-<br>
-&lt;p&gt;<br>
-PT Maju Bersama adalah perusahaan profesional yang menyediakan solusi terbaik untuk membantu bisnis berkembang.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;a href="https://wa.me/6287777986536" target="_blank"&gt;<br>
-&lt;button&gt;Hubungi Kami&lt;/button&gt;<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/section&gt;<br>
-&lt;section&gt;<br>
-<br>
-&lt;h2&gt;Tentang Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="about-box"&gt;<br>
-<br>
-&lt;p&gt;<br>
-Kami adalah perusahaan yang berkomitmen memberikan layanan berkualitas, terpercaya, dan berorientasi pada kepuasan pelanggan.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section&gt;<br>
-<br>
-&lt;h2&gt;Layanan Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="service-container"&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Konsultasi Bisnis&lt;/h3&gt;<br>
-&lt;p&gt;Memberikan solusi terbaik untuk kebutuhan dan perkembangan bisnis Anda.&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Layanan Profesional&lt;/h3&gt;<br>
-&lt;p&gt;Menyediakan layanan profesional untuk mendukung kebutuhan bisnis Anda.&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;div class="service-card"&gt;<br>
-<br>
-&lt;h3&gt;Dukungan Pelanggan&lt;/h3&gt;<br>
-&lt;p&gt;Memberikan pelayanan terbaik untuk menjaga kepuasan pelanggan.&lt;/p&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section&gt;<br>
-<br>
-&lt;h2&gt;Kontak Kami&lt;/h2&gt;<br>
-<br>
-&lt;div class="contact-box"&gt;<br>
-<br>
-&lt;h3&gt;Hubungi Kami&lt;/h3&gt;<br>
-<br>
-&lt;p&gt;<br>
-Siap membantu bisnis Anda berkembang melalui layanan profesional kami.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;a href="https://wa.me/6287777986536" target="_blank"&gt;<br>
-&lt;button&gt;Hubungi Kami&lt;/button&gt;<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;footer&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#169; 2026 PT MAJU BERSAMA. All Rights Reserved.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/footer&gt;<br>
-<br>
-&lt;/body&gt;<br>
-<br>
-&lt;/html&gt;</div>
+
+body{
+         font-family: Arial, sans-serif;
+         margin:0;
+}
+nav{
+
+background:#D6B56E;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+
+list-style:none;
+display:flex;
+gap:15px;
+margin:0;
+padding:0;
+}
+
+nav ul li:hover{
+
+color:#cccccc;
+cursor:pointer;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+section h1{
+font-size:40px;
+}
+
+button{
+
+background:#B08A3E;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+nav h2{
+
+margin:0;
+font-size:24px;
+}
+.service-container{
+
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.service-card{
+
+background:#B08A3E;
+color:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+button:hover{
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.about-box{
+
+background:#f2f2f2;
+padding:30px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+}
+
+.about-box p{
+line-height:1.6;
+}
+
+section h2{
+
+font-size:32px;
+margin-bottom:30px;
+}
+
+.contact-box{
+background:#222;
+color:white;
+padding:40px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+}
+.contact-box button{
+background:white;
+color:#8A6A2F;
+font-weight:bold;
+}
+.contact-box button:hover{
+background:#8A6A2F;
+color:white;
+}
+
+.contact-box h3{
+
+font-size:28px;
+margin-bottom:15px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>PT MAJU BERSAMA</h2>
+<ul>
+<li>Home</li>
+<li>Tentang</li>
+<li>Layanan</li>
+<li>Kontak</li>
+</ul>
+
+</nav>
+
+<section>
+
+<h1>Solusi Terbaik untuk Kebutuhan Bisnis Anda</h1>
+
+<p>
+PT Maju Bersama adalah perusahaan profesional yang menyediakan solusi terbaik untuk membantu bisnis berkembang.
+</p>
+
+<a href="https://wa.me/6287777986536" target="_blank">
+<button>Hubungi Kami</button>
+</a>
+
+</section>
+<section>
+
+<h2>Tentang Kami</h2>
+
+<div class="about-box">
+
+<p>
+Kami adalah perusahaan yang berkomitmen memberikan layanan berkualitas, terpercaya, dan berorientasi pada kepuasan pelanggan.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Layanan Kami</h2>
+
+<div class="service-container">
+
+<div class="service-card">
+
+<h3>Konsultasi Bisnis</h3>
+<p>Memberikan solusi terbaik untuk kebutuhan dan perkembangan bisnis Anda.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Layanan Profesional</h3>
+<p>Menyediakan layanan profesional untuk mendukung kebutuhan bisnis Anda.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Dukungan Pelanggan</h3>
+<p>Memberikan pelayanan terbaik untuk menjaga kepuasan pelanggan.</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+<section>
+
+<h2>Kontak Kami</h2>
+
+<div class="contact-box">
+
+<h3>Hubungi Kami</h3>
+
+<p>
+Siap membantu bisnis Anda berkembang melalui layanan profesional kami.
+</p>
+
+<a href="https://wa.me/6287777986536" target="_blank">
+<button>Hubungi Kami</button>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 PT MAJU BERSAMA. All Rights Reserved.
+</p>
+
+</footer>
+
 </body>
+
 </html>
