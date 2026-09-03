@@ -1,176 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
+    <title>Bengkel Maju Jaya</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+        }
+
+        nav{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:5px;
+            font-size:14px;
+        }
+
+        section{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        h1{
+            font-size:32px;
+        }
+
+        .button{
+            display:inline-block;
+            background:#25D366;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+         footer{
+             background:#333;
+             color:white;
+             text-align:center;
+             padding:20px;
+         }
+    </style>
+
 </head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
-}
-</style><body>
-<div>&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-&lt;head&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;title&gt;Bengkel Maju Jaya&lt;/title&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;style&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; body{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:0;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nav{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#333;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:15px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nav a{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin:5px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:14px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; section{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:80px 20px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h1{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:32px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .button{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:inline-block;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#25D366;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:12px 25px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius:5px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; footer{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background:#333;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:20px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp; &lt;/style&gt;<br>
-<br>
-&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-<br>
-&lt;nav&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#home"&gt;Home&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#tentang"&gt;Tentang&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#layanan"&gt;Layanan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#paket"&gt;Paket Servis&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#kontak"&gt;Kontak&lt;/a&gt;<br>
-&lt;/nav&gt;<br>
-<br>
-<br>
-&lt;section id="home"&gt;<br>
-<br>
-&lt;h1&gt;Bengkel Maju Jaya&lt;/h1&gt;<br>
-<br>
-&lt;p&gt;<br>
-Servis kendaraan cepat, terpercaya, dan berkualitas.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;img src="images/bengkel.png" alt="Bengkel Maju Jaya" width="100%"&gt;<br>
-<br>
-&lt;a class="button" href="#kontak"&gt;<br>
-Booking Servis<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="tentang"&gt;<br>
-<br>
-&lt;h2&gt;Tentang Bengkel&lt;/h2&gt;<br>
-<br>
-&lt;p&gt;<br>
-Bengkel Maju Jaya melayani perawatan dan perbaikan kendaraan<br>
-dengan teknisi berpengalaman serta pelayanan yang terpercaya.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="layanan"&gt;<br>
-<br>
-&lt;h2&gt;Layanan Bengkel&lt;/h2&gt;<br>
-<br>
-&lt;p&gt;&#128295; Servis Mesin&lt;/p&gt;<br>
-<br>
-&lt;p&gt;&#128738;&#65039; Ganti Oli&lt;/p&gt;<br>
-<br>
-&lt;p&gt;&#128663; Tune Up Kendaraan&lt;/p&gt;<br>
-<br>
-&lt;p&gt;&#128734; Perbaikan Rem&lt;/p&gt;<br>
-<br>
-&lt;p&gt;&#9889; Kelistrikan Mobil&lt;/p&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="paket"&gt;<br>
-<br>
-&lt;h2&gt;Paket Servis&lt;/h2&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#128295; Paket Hemat&lt;br&gt;<br>
-Ganti Oli + Pemeriksaan Mesin<br>
-&lt;/p&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#128663; Paket Lengkap&lt;br&gt;<br>
-Tune Up + Cek Rem + Kelistrikan<br>
-&lt;/p&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#11088; Paket Keluarga&lt;br&gt;<br>
-Perawatan Berkala Kendaraan<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/section&gt; <br>
-<br>
-&lt;section id="kontak"&gt;<br>
-<br>
-&lt;h2&gt;Hubungi Kami&lt;/h2&gt;<br>
-<br>
-&lt;p&gt;<br>
-Siap melayani servis kendaraan Anda.<br>
-&lt;/p&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#128205; Alamat: Jl. Raya Bengkel Maju<br>
-&lt;/p&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#128338; Jam Buka: 08.00 - 17.00<br>
-&lt;/p&gt;<br>
-<br>
-&lt;a class="button" <br>
-href="https://wa.me/6287777986536" <br>
-target="_blank"&gt;<br>
-Chat WhatsApp<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;footer&gt;<br>
-<br>
-&lt;p&gt;<br>
-&#169; 2026 Bengkel Maju Jaya | Servis Kendaraan Terpercaya<br>
-&lt;/p&gt;<br>
-<br>
-&lt;/footer&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;</div>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#paket">Paket Servis</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+
+<section id="home">
+
+<h1>Bengkel Maju Jaya</h1>
+
+<p>
+Servis kendaraan cepat, terpercaya, dan berkualitas.
+</p>
+
+<img src="bengkel.png" alt="Bengkel Maju Jaya" width="100%">
+
+<a class="button" href="#kontak">
+Booking Servis
+</a>
+
+</section>
+
+<section id="tentang">
+
+<h2>Tentang Bengkel</h2>
+
+<p>
+Bengkel Maju Jaya melayani perawatan dan perbaikan kendaraan
+dengan teknisi berpengalaman serta pelayanan yang terpercaya.
+</p>
+
+</section>
+
+<section id="layanan">
+
+<h2>Layanan Bengkel</h2>
+
+<p>🔧 Servis Mesin</p>
+
+<p>🛢️ Ganti Oli</p>
+
+<p>🚗 Tune Up Kendaraan</p>
+
+<p>🛞 Perbaikan Rem</p>
+
+<p>⚡ Kelistrikan Mobil</p>
+
+</section>
+
+<section id="paket">
+
+<h2>Paket Servis</h2>
+
+<p>
+🔧 Paket Hemat<br>
+Ganti Oli + Pemeriksaan Mesin
+</p>
+
+<p>
+🚗 Paket Lengkap<br>
+Tune Up + Cek Rem + Kelistrikan
+</p>
+
+<p>
+⭐ Paket Keluarga<br>
+Perawatan Berkala Kendaraan
+</p>
+
+</section> 
+
+<section id="kontak">
+
+<h2>Hubungi Kami</h2>
+
+<p>
+Siap melayani servis kendaraan Anda.
+</p>
+
+<p>
+📍 Alamat: Jl. Raya Bengkel Maju
+</p>
+
+<p>
+🕒 Jam Buka: 08.00 - 17.00
+</p>
+
+<a class="button" 
+href="https://wa.me/6287777986536" 
+target="_blank">
+Chat WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Bengkel Maju Jaya | Servis Kendaraan Terpercaya
+</p>
+
+</footer>
 </body>
 </html>
