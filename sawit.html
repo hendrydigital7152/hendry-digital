@@ -25,16 +25,34 @@
         }
 
    .hero{
+    position:relative;
     background-image:url("sawit.jpg");
-    background-size:33% auto;
+    background-size:30% auto;
     background-repeat:no-repeat;
     background-position:center top;
     background-color:#2E7D32;
     color:#333;
     text-align:center;
-    padding:300x 20px 40px;
+    padding:300px 20px 40px;
     width:100%;
     max-width:none;
+}
+
+.hero-img{
+    position:absolute;
+    width:180px;
+    height:220px;
+    object-fit:cover;
+    top:40px;
+    border-radius:10px;
+}
+
+.hero-img.left{
+    left:30px;
+}
+
+.hero-img.right{
+    right:30px;
 }
 
         .hero h1{
@@ -136,8 +154,16 @@
 </nav>
 
 <section class="hero" id="home">
-    <h1>Perkebunan Kelapa Sawit Hariyanto Kimhin</h1>
-    <p>Perkebunan kelapa sawit keluarga yang dikelola dan dirawat secara berkelanjutan.</p>
+
+  <img src="sawit1.jpg" class="hero-img left" alt="Pohon kelapa sawit">
+
+    <div class="hero-content">
+            <h1>Perkebunan Kelapa Sawit Hariyanto Kimhin</h1>
+            <p>Perkebunan kelapa sawit keluarga yang dikelola dan dirawat secara berkelanjutan.</p>
+    </div>
+
+     <img src="sawit2.jpg" class="hero-img right" alt="Buah kelapa sawit"> 
+
 </section>
 
 <section id="tentang">
