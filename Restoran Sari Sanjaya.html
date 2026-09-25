@@ -1,402 +1,385 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
-</head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restoran Sari Sanjaya</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
 }
-</style><body>
-<div>&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="id"&gt;<br>
-&lt;head&gt;<br>
-&lt;meta charset="UTF-8"&gt;<br>
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
-<br>
-&lt;title&gt;Restoran Sari Sanjaya&lt;/title&gt;<br>
-<br>
-&lt;style&gt;<br>
-<br>
-*{<br>
-&nbsp;&nbsp;&nbsp; box-sizing:border-box;<br>
-}<br>
-<br>
-body{<br>
-&nbsp;&nbsp;&nbsp; margin:0;<br>
-&nbsp;&nbsp;&nbsp; font-family:Arial,sans-serif;<br>
-&nbsp;&nbsp;&nbsp; background:#FFF8E7;<br>
-&nbsp;&nbsp;&nbsp; color:#333;<br>
-}<br>
-<br>
-/* NAVBAR */<br>
-nav{<br>
-&nbsp;&nbsp;&nbsp; background:#8B3A00;<br>
-&nbsp;&nbsp;&nbsp; padding:15px;<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-}<br>
-<br>
-nav a{<br>
-&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-&nbsp;&nbsp;&nbsp; margin:0 12px;<br>
-&nbsp;&nbsp;&nbsp; font-size:16px;<br>
-}<br>
-<br>
-/* HERO */<br>
-.hero{<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp; padding:60px 20px;<br>
-&nbsp;&nbsp;&nbsp; background:#F3D6A4;<br>
-}<br>
-<br>
-.hero h1{<br>
-&nbsp;&nbsp;&nbsp; color:#8B3A00;<br>
-&nbsp;&nbsp;&nbsp; font-size:38px;<br>
-&nbsp;&nbsp;&nbsp; margin-bottom:15px;<br>
-}<br>
-<br>
-.hero p{<br>
-&nbsp;&nbsp;&nbsp; font-size:18px;<br>
-&nbsp;&nbsp;&nbsp; margin-bottom:25px;<br>
-}<br>
-<br>
-.hero-btn{<br>
-&nbsp;&nbsp;&nbsp; display:inline-block;<br>
-&nbsp;&nbsp;&nbsp; background:#8B3A00;<br>
-&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-&nbsp;&nbsp;&nbsp; padding:12px 22px;<br>
-&nbsp;&nbsp;&nbsp; margin:5px;<br>
-&nbsp;&nbsp;&nbsp; border-radius:6px;<br>
-}<br>
-<br>
-/* SECTION */<br>
-section{<br>
-&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-}<br>
-<br>
-section h2{<br>
-&nbsp;&nbsp;&nbsp; color:#8B3A00;<br>
-&nbsp;&nbsp;&nbsp; margin-bottom:25px;<br>
-}<br>
-<br>
-/* TENTANG */<br>
-.tentang{<br>
-&nbsp;&nbsp;&nbsp; max-width:800px;<br>
-&nbsp;&nbsp;&nbsp; margin:auto;<br>
-&nbsp;&nbsp;&nbsp; line-height:1.7;<br>
-}<br>
-<br>
-/* MENU */<br>
-.menu-container{<br>
-&nbsp;&nbsp;&nbsp; display:flex;<br>
-&nbsp;&nbsp;&nbsp; justify-content:center;<br>
-&nbsp;&nbsp;&nbsp; gap:20px;<br>
-&nbsp;&nbsp;&nbsp; flex-wrap:wrap;<br>
-}<br>
-<br>
-.card{<br>
-&nbsp;&nbsp;&nbsp; background:white;<br>
-&nbsp;&nbsp;&nbsp; border:2px solid #D6A15D;<br>
-&nbsp;&nbsp;&nbsp; border-radius:10px;<br>
-&nbsp;&nbsp;&nbsp; padding:25px;<br>
-&nbsp;&nbsp;&nbsp; width:250px;<br>
-}<br>
-<br>
-.card h3{<br>
-&nbsp;&nbsp;&nbsp; color:#8B3A00;<br>
-}<br>
-<br>
-/* GALERI */<br>
-.galeri{<br>
-&nbsp;&nbsp;&nbsp; display:flex;<br>
-&nbsp;&nbsp;&nbsp; justify-content:center;<br>
-&nbsp;&nbsp;&nbsp; gap:20px;<br>
-&nbsp;&nbsp;&nbsp; flex-wrap:wrap;<br>
-}<br>
-<br>
-.galeri-box{<br>
-&nbsp;&nbsp;&nbsp; width:250px;<br>
-&nbsp;&nbsp;&nbsp; height:180px;<br>
-&nbsp;&nbsp;&nbsp; background:#E8D5B5;<br>
-&nbsp;&nbsp;&nbsp; border-radius:10px;<br>
-&nbsp;&nbsp;&nbsp; overflow:hidden;<br>
-}<br>
-<br>
-.galeri-box img{<br>
-&nbsp;&nbsp;&nbsp; width:100%;<br>
-&nbsp;&nbsp;&nbsp; height:100%;<br>
-&nbsp;&nbsp;&nbsp; object-fit:cover;<br>
-&nbsp;&nbsp;&nbsp; display:block;<br>
-}<br>
-<br>
-/* KONTAK */<br>
-.kontak{<br>
-&nbsp;&nbsp;&nbsp; background:#F3D6A4;<br>
-}<br>
-<br>
-.wa-btn{<br>
-&nbsp;&nbsp;&nbsp; display:inline-block;<br>
-&nbsp;&nbsp;&nbsp; background:#2E7D32;<br>
-&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-&nbsp;&nbsp;&nbsp; padding:12px 25px;<br>
-&nbsp;&nbsp;&nbsp; border-radius:6px;<br>
-&nbsp;&nbsp;&nbsp; margin-top:10px;<br>
-}<br>
-<br>
-/* FOOTER */<br>
-footer{<br>
-&nbsp;&nbsp;&nbsp; background:#8B3A00;<br>
-&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp; padding:20px;<br>
-}<br>
-<br>
-.back-btn{<br>
-&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-}<br>
-<br>
-&lt;/style&gt;<br>
-&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-<br>
-&lt;!-- NAVBAR --&gt;<br>
-&lt;nav&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#home"&gt;Home&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#tentang"&gt;Tentang&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#menu"&gt;Menu&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#jajanan"&gt;Jajanan Pasar&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#galeri"&gt;Galeri&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#kontak"&gt;Kontak&lt;/a&gt;<br>
-&lt;/nav&gt;<br>
-<br>
-&lt;!-- FOTO OUTLET --&gt;<br>
-&lt;div class="outlet"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;img src="outlet.jpg" alt="Outlet Restoran Sari Sanjaya"&gt;<br>
-&lt;/div&gt;<br>
-<br>
-&lt;!-- HERO --&gt;<br>
-&lt;section class="hero" id="home"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h1&gt;Restoran Sari Sanjaya&lt;/h1&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nikmatnya Kuliner Nusantara dalam Satu Tempat<br>
-&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#menu" class="hero-btn"&gt;Lihat Menu&lt;/a&gt;<br>
-<br>
-&nbsp;&nbsp; &lt;a href="https://wa.me/6281219342414" target="_blank" class="hero-btn"&gt;Pesan via WhatsApp&lt;/a&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- TENTANG --&gt;<br>
-&lt;section id="tentang"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Tentang Sari Sanjaya&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="tentang"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Restoran Sari Sanjaya menghadirkan beragam pilihan<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kuliner Indonesia dalam satu tempat.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menu yang tersedia meliputi Pempek Palembang,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Masakan Nusantara, dan berbagai Jajanan Pasar.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- MENU --&gt;<br>
-&lt;section id="menu"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Menu Utama&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="menu-container"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;&#128031; Pempek Palembang&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beragam pilihan pempek dengan cita rasa khas Palembang.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;&#127835; Masakan Nusantara&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pilihan masakan Indonesia dengan cita rasa yang beragam.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;&#127841; Jajanan Pasar&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berbagai jajanan pasar tradisional yang menggugah selera.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- MENU PEMPEK --&gt;<br>
-&lt;section id="pempek"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Menu Pempek&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="menu-container"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Pempek Kapal Selam&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pempek dengan isian telur.&lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Pempek Lenjer&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pempek dengan bentuk panjang dan cita rasa khas.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Pempek Kulit&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pempek gurih berbahan kulit ikan.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Otak-Otak&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Olahan ikan dengan cita rasa khas Palembang.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- MASAKAN NUSANTARA --&gt;<br>
-&lt;section id="masakan"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Masakan Nusantara&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="menu-container"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Pindang Patin&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Masakan ikan patin dengan kuah pindang yang kaya rasa.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Udang Pedas&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Olahan udang dengan cita rasa pedas dan gurih.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- JAJANAN PASAR --&gt;<br>
-&lt;section id="jajanan"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Jajanan Pasar&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="menu-container"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Kue Lapis&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Kue tradisional dengan tekstur lembut dan cita rasa manis.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Bolu Kujo&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Kue tradisional khas dengan cita rasa yang lembut dan lezat.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="wa-btn" href="https://wa.me/6281219342414" target="_blank"&gt;Pesan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-&lt;!-- GALERI --&gt;<br>
-&lt;section id="galeri"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Galeri&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="galeri"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="galeri-box"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="pempek.jpg" alt="Pempek"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="galeri-box"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="masakan.jpg" alt="Pindang Patin"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="galeri-box"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="jajanan.jpg" alt="Aneka Kue Basah"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="galeri-box"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="gambar4.jpg" alt="Pempek dalam Tampah"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="galeri-box"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="gambar5.jpg" alt="Udang Pedas"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="galeri-box"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="gambar6.jpg" alt="Otak-Otak"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- KONTAK --&gt;<br>
-&lt;section class="kontak" id="kontak"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Kontak&lt;/h2&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#128205; Kelapa Gading, Jakarta Utara<br>
-&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cabang Pusat<br>
-&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="https://wa.me/6281219342414" target="_blank" class="wa-btn"&gt;<br>
-&nbsp;&nbsp;&nbsp; Pesan via WhatsApp<br>
-&lt;/a&gt;<br>
-<br>
-&lt;/section&gt;<br>
-<br>
-&lt;!-- FOOTER --&gt;<br>
-&lt;footer&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#169; 2026 Restoran Sari Sanjaya<br>
-&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-<br>
-&lt;/footer&gt;<br>
-<br>
-&lt;/html&gt;<br>
- </div>
-</body>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#FFF8E7;
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    background:#8B3A00;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:16px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#F3D6A4;
+}
+
+.hero h1{
+    color:#8B3A00;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#8B3A00;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    margin:5px;
+    border-radius:6px;
+}
+
+/* SECTION */
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+section h2{
+    color:#8B3A00;
+    margin-bottom:25px;
+}
+
+/* TENTANG */
+.tentang{
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* MENU */
+.menu-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    border:2px solid #D6A15D;
+    border-radius:10px;
+    padding:25px;
+    width:250px;
+}
+
+.card h3{
+    color:#8B3A00;
+}
+
+/* GALERI */
+.galeri{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.galeri-box{
+    width:250px;
+    height:180px;
+    background:#E8D5B5;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.galeri-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* KONTAK */
+.kontak{
+    background:#F3D6A4;
+}
+
+.wa-btn{
+    display:inline-block;
+    background:#2E7D32;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#8B3A00;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.back-btn{
+    color:white;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#menu">Menu</a>
+    <a href="#jajanan">Jajanan Pasar</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<!-- FOTO OUTLET -->
+<div class="outlet">
+    <img src="outlet.jpg" alt="Outlet Restoran Sari Sanjaya">
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <h1>Restoran Sari Sanjaya</h1>
+
+    <p>
+        Nikmatnya Kuliner Nusantara dalam Satu Tempat
+    </p>
+
+    <a href="#menu" class="hero-btn">Lihat Menu</a>
+
+   <a href="https://wa.me/6281219342414" target="_blank" class="hero-btn">Pesan via WhatsApp</a>
+
+</section>
+
+<!-- TENTANG -->
+<section id="tentang">
+
+    <h2>Tentang Sari Sanjaya</h2>
+
+    <div class="tentang">
+
+        <p>
+            Restoran Sari Sanjaya menghadirkan beragam pilihan
+            kuliner Indonesia dalam satu tempat.
+        </p>
+
+        <p>
+            Menu yang tersedia meliputi Pempek Palembang,
+            Masakan Nusantara, dan berbagai Jajanan Pasar.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MENU -->
+<section id="menu">
+
+    <h2>Menu Utama</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <h3>🐟 Pempek Palembang</h3>
+            <p>
+                Beragam pilihan pempek dengan cita rasa khas Palembang.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🍛 Masakan Nusantara</h3>
+            <p>
+                Pilihan masakan Indonesia dengan cita rasa yang beragam.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🍡 Jajanan Pasar</h3>
+            <p>
+                Berbagai jajanan pasar tradisional yang menggugah selera.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MENU PEMPEK -->
+<section id="pempek">
+
+    <h2>Menu Pempek</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <h3>Pempek Kapal Selam</h3>
+            <p>Pempek dengan isian telur.</p>
+
+           <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+        <div class="card">
+            <h3>Pempek Lenjer</h3>
+            <p>Pempek dengan bentuk panjang dan cita rasa khas.</p>
+            <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+        <div class="card">
+            <h3>Pempek Kulit</h3>
+            <p>Pempek gurih berbahan kulit ikan.</p>
+           <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+        <div class="card">
+            <h3>Otak-Otak</h3>
+            <p>Olahan ikan dengan cita rasa khas Palembang.</p>
+            <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MASAKAN NUSANTARA -->
+<section id="masakan">
+
+    <h2>Masakan Nusantara</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <h3>Pindang Patin</h3>
+            <p>Masakan ikan patin dengan kuah pindang yang kaya rasa.</p>
+            <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+        <div class="card">
+            <h3>Udang Pedas</h3>
+            <p>Olahan udang dengan cita rasa pedas dan gurih.</p>
+            <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- JAJANAN PASAR -->
+<section id="jajanan">
+
+    <h2>Jajanan Pasar</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <h3>Kue Lapis</h3>
+            <p>Kue tradisional dengan tekstur lembut dan cita rasa manis.</p>
+              <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+        <div class="card">
+            <h3>Bolu Kujo</h3>
+            <p>Kue tradisional khas dengan cita rasa yang lembut dan lezat.</p>
+               <a class="wa-btn" href="https://wa.me/6281219342414" target="_blank">Pesan</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- GALERI -->
+<section id="galeri">
+
+    <h2>Galeri</h2>
+
+    <div class="galeri">
+
+        <div class="galeri-box">
+            <img src="pempek.jpg" alt="Pempek">
+        </div>
+
+        <div class="galeri-box">
+            <img src="masakan.jpg" alt="Pindang Patin">
+        </div>
+
+        <div class="galeri-box">
+            <img src="jajanan.jpg" alt="Aneka Kue Basah">
+        </div>
+
+        <div class="galeri-box">
+            <img src="gambar4.jpg" alt="Pempek dalam Tampah">
+        </div>
+
+        <div class="galeri-box">
+            <img src="gambar5.jpg" alt="Udang Pedas">
+        </div>
+
+        <div class="galeri-box">
+            <img src="gambar6.jpg" alt="Otak-Otak">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- KONTAK -->
+<section class="kontak" id="kontak">
+
+    <h2>Kontak</h2>
+
+    <p>
+        📍 Kelapa Gading, Jakarta Utara
+    </p>
+
+    <p>
+        Cabang Pusat
+    </p>
+
+    <a href="https://wa.me/6281219342414" target="_blank" class="wa-btn">
+    Pesan via WhatsApp
+</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Restoran Sari Sanjaya
+    </p>
+
+</footer>
+
 </html>
