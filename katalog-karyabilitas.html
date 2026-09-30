@@ -1,204 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
-</head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Katalog Karyabilitas</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
 }
-</style><body>
-<div>&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="id"&gt;<br>
-&lt;head&gt;<br>
-&lt;meta charset="UTF-8"&gt;<br>
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
-<br>
-&lt;title&gt;Katalog Karyabilitas&lt;/title&gt;<br>
-<br>
-&lt;style&gt;<br>
-<br>
-*{<br>
-&nbsp;&nbsp;&nbsp; box-sizing:border-box;<br>
-}<br>
-<br>
-body{<br>
-&nbsp;&nbsp;&nbsp; margin:0;<br>
-&nbsp;&nbsp;&nbsp; font-family:Arial,sans-serif;<br>
-&nbsp;&nbsp;&nbsp; background:#EAF4FB;<br>
-&nbsp;&nbsp;&nbsp; color:#333;<br>
-}<br>
-<br>
-nav{<br>
-&nbsp;&nbsp;&nbsp; background:#163A5F;<br>
-&nbsp;&nbsp;&nbsp; padding:15px;<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-}<br>
-<br>
-nav a{<br>
-&nbsp;&nbsp;&nbsp; color:white;<br>
-&nbsp;&nbsp;&nbsp; text-decoration:none;<br>
-&nbsp;&nbsp;&nbsp; margin:0 12px;<br>
-&nbsp;&nbsp;&nbsp; font-size:16px;<br>
-}<br>
-<br>
-.hero{<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp; padding:60px 20px;<br>
-&nbsp;&nbsp;&nbsp; background:#FFFFFF;<br>
-}<br>
-<br>
-.hero h1{<br>
-&nbsp;&nbsp;&nbsp; color:#163A5F;<br>
-&nbsp;&nbsp;&nbsp; font-size:38px;<br>
-&nbsp;&nbsp;&nbsp; margin-bottom:15px;<br>
-}<br>
-<br>
-.hero p{<br>
-&nbsp;&nbsp;&nbsp; font-size:18px;<br>
-}<br>
-<br>
-section{<br>
-&nbsp;&nbsp;&nbsp; padding:50px 20px;<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-}<br>
-<br>
-.card{<br>
-&nbsp;&nbsp;&nbsp; background:#FFFFFF;<br>
-&nbsp;&nbsp;&nbsp; border:2px solid #B8D8EE;<br>
-&nbsp;&nbsp;&nbsp; border-radius:10px;<br>
-&nbsp;&nbsp;&nbsp; padding:20px;<br>
-&nbsp;&nbsp;&nbsp; width:280px;<br>
-&nbsp;&nbsp;&nbsp; margin:20px auto;<br>
-&nbsp;&nbsp;&nbsp; box-sizing:border-box;<br>
-}<br>
-.card button{<br>
-&nbsp;&nbsp;&nbsp; padding:8px 14px;<br>
-&nbsp;&nbsp;&nbsp; font-size:18px;<br>
-&nbsp;&nbsp;&nbsp; cursor:pointer;<br>
-&nbsp;&nbsp;&nbsp; border-radius:6px;<br>
-&nbsp;&nbsp;&nbsp; border:1px solid #B8D8EE;<br>
-&nbsp;&nbsp;&nbsp; background:#F5FAFD;<br>
-}<br>
-<br>
-.card span{<br>
-&nbsp;&nbsp;&nbsp; display:inline-block;<br>
-&nbsp;&nbsp;&nbsp; min-width:30px;<br>
-&nbsp;&nbsp;&nbsp; text-align:center;<br>
-&nbsp;&nbsp;&nbsp; font-size:18px;<br>
-&nbsp;&nbsp;&nbsp; font-weight:bold;<br>
-}<br>
-<br>
-<br>
-.card h3{<br>
-&nbsp;&nbsp;&nbsp; color:#163A5F;<br>
-}<br>
-<br>
-<br>
-section h2{<br>
-&nbsp;&nbsp;&nbsp; color:#163A5F;<br>
-&nbsp;&nbsp;&nbsp; margin-bottom:25px;<br>
-}<br>
-<br>
-&lt;/style&gt;<br>
-&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-<br>
-&lt;nav&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#home"&gt;Home&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#nonmakanan"&gt;Non Makanan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#makanan"&gt;Makanan&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;a href="#jasa"&gt;Jasa&lt;/a&gt;<br>
-&lt;/nav&gt;<br>
-<br>
-&lt;section class="hero" id="home"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;h1&gt;Katalog Karyabilitas&lt;/h1&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;Produk dan Jasa Karya Disabilitas&lt;/p&gt;<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="nonmakanan"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Non Makanan&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;h3&gt;Blitar&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;Produk karya ODGJ, tuna wicara dan tuli.&lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Kain Batik Ciprat&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Deskripsi produk akan ditambahkan setelah data dari owner tersedia.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Harga: Rp 100.000&lt;/p&gt;<br>
-&nbsp; &lt;div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;button onclick="kurang()"&gt;&#8722;&lt;/button&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;span id="jumlah"&gt;1&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;button onclick="tambah()"&gt;+&lt;/button&gt;<br>
-&lt;/div&gt;<br>
-&lt;p&gt;Total: &lt;strong id="total"&gt;Rp -&lt;/strong&gt;&lt;/p&gt;<br>
-&lt;button class="wa-button" onclick="pesanWhatsApp()"&gt;Pesan via WhatsApp&lt;/button&gt;<br>
-<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="makanan"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Makanan&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;Produk makanan berdasarkan lokasi pembuat.&lt;/p&gt;<br>
-&lt;/section&gt;<br>
-<br>
-&lt;section id="jasa"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;h2&gt;Jasa&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;p&gt;Fotografi, Mural, dan Lukis.&lt;/p&gt;<br>
-&lt;/section&gt;<br>
-<br>
-&lt;script&gt;<br>
-<br>
-let jumlah = 1;<br>
-let harga = 100000;<br>
-<br>
-function tampilkanTotal(){<br>
-&nbsp;&nbsp;&nbsp; if(harga &gt; 0){<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let total = jumlah * harga;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("total").innerText =<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Rp " + total.toLocaleString("id-ID");<br>
-&nbsp;&nbsp;&nbsp; }<br>
-}<br>
-<br>
-function tambah(){<br>
-&nbsp;&nbsp;&nbsp; jumlah++;<br>
-&nbsp;&nbsp;&nbsp; document.getElementById("jumlah").innerText = jumlah;<br>
-&nbsp;&nbsp;&nbsp; tampilkanTotal();<br>
-}<br>
-<br>
-function kurang(){<br>
-&nbsp;&nbsp;&nbsp; if(jumlah &gt; 1){<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jumlah--;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("jumlah").innerText = jumlah;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tampilkanTotal();<br>
-&nbsp;&nbsp;&nbsp; }<br>
-}<br>
-<br>
-function pesanWhatsApp(){<br>
-&nbsp;&nbsp;&nbsp; let total = jumlah * harga;<br>
-<br>
-&nbsp;&nbsp;&nbsp; let pesan =<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Halo, saya ingin memesan Kain Batik Ciprat%0A" +<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Jumlah: " + jumlah + "%0A" +<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Total: Rp " + total.toLocaleString("id-ID");<br>
-<br>
-&nbsp;&nbsp;&nbsp; window.open(<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "https://wa.me/628161949570?text=" + pesan,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "_blank"<br>
-&nbsp;&nbsp;&nbsp; );<br>
-}<br>
-<br>
-&lt;/script&gt;<br>
-<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;<br>
-<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;</div>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#EAF4FB;
+    color:#333;
+}
+
+nav{
+    background:#163A5F;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:16px;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#FFFFFF;
+}
+
+.hero h1{
+    color:#163A5F;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.card{
+    background:#FFFFFF;
+    border:2px solid #B8D8EE;
+    border-radius:10px;
+    padding:20px;
+    width:280px;
+    margin:20px auto;
+    box-sizing:border-box;
+}
+.card button{
+    padding:8px 14px;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:6px;
+    border:1px solid #B8D8EE;
+    background:#F5FAFD;
+}
+
+.card span{
+    display:inline-block;
+    min-width:30px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+.card h3{
+    color:#163A5F;
+}
+
+
+section h2{
+    color:#163A5F;
+    margin-bottom:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#nonmakanan">Non Makanan</a>
+    <a href="#makanan">Makanan</a>
+    <a href="#jasa">Jasa</a>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Katalog Karyabilitas</h1>
+    <p>Produk dan Jasa Karya Disabilitas</p>
+</section>
+
+<section id="nonmakanan">
+    <h2>Non Makanan</h2>
+    <h3>Blitar</h3>
+    <p>Produk karya ODGJ, tuna wicara dan tuli.</p>
+
+    <div class="card">
+        <h3>Kain Batik Ciprat</h3>
+        <p>Deskripsi produk akan ditambahkan setelah data dari owner tersedia.</p>
+        <p>Harga: Rp 100.000</p>
+  <div>
+    <button onclick="kurang()">−</button>
+    <span id="jumlah">1</span>
+    <button onclick="tambah()">+</button>
+</div>
+<p>Total: <strong id="total">Rp -</strong></p>
+<button class="wa-button" onclick="pesanWhatsApp()">Pesan via WhatsApp</button>
+
+
+    </div>
+</section>
+
+<section id="makanan">
+    <h2>Makanan</h2>
+    <p>Produk makanan berdasarkan lokasi pembuat.</p>
+</section>
+
+<section id="jasa">
+    <h2>Jasa</h2>
+    <p>Fotografi, Mural, dan Lukis.</p>
+</section>
+
+<script>
+
+let jumlah = 1;
+let harga = 100000;
+
+function tampilkanTotal(){
+    if(harga > 0){
+        let total = jumlah * harga;
+        document.getElementById("total").innerText =
+            "Rp " + total.toLocaleString("id-ID");
+    }
+}
+
+function tambah(){
+    jumlah++;
+    document.getElementById("jumlah").innerText = jumlah;
+    tampilkanTotal();
+}
+
+function kurang(){
+    if(jumlah > 1){
+        jumlah--;
+        document.getElementById("jumlah").innerText = jumlah;
+        tampilkanTotal();
+    }
+}
+
+function pesanWhatsApp(){
+    let total = jumlah * harga;
+
+    let pesan =
+        "Halo, saya ingin memesan Kain Batik Ciprat%0A" +
+        "Jumlah: " + jumlah + "%0A" +
+        "Total: Rp " + total.toLocaleString("id-ID");
+
+    window.open(
+        "https://wa.me/628161949570?text=" + pesan,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
