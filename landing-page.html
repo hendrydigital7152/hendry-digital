@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>notepad</title>
+</head>
+<style type="text/css">
+ol,ul{
+display:block;
+list-style-type:none;
+margin:3px;
+}
+</style><body>
+<div><br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="id"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+&lt;title&gt;Hendry Digital | Website &amp; Landing Page&lt;/title&gt;<br>
+<br>
+&lt;style&gt;<br>
+* {<br>
+&nbsp;&nbsp;&nbsp; box-sizing: border-box;<br>
+&nbsp;&nbsp;&nbsp; margin: 0;<br>
+&nbsp;&nbsp;&nbsp; padding: 0;<br>
+}<br>
+<br>
+body {<br>
+&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;&nbsp; color: #243247;<br>
+&nbsp;&nbsp;&nbsp; background: #f5f8fc;<br>
+&nbsp;&nbsp;&nbsp; line-height: 1.6;<br>
+}<br>
+<br>
+header {<br>
+&nbsp;&nbsp;&nbsp; background: #163a5f;<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; padding: 20px 8%;<br>
+&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; justify-content: space-between;<br>
+&nbsp;&nbsp;&nbsp; align-items: center;<br>
+&nbsp;&nbsp;&nbsp; flex-wrap: wrap;<br>
+&nbsp;&nbsp;&nbsp; gap: 12px;<br>
+}<br>
+<br>
+.logo {<br>
+&nbsp;&nbsp;&nbsp; font-size: 24px;<br>
+&nbsp;&nbsp;&nbsp; font-weight: bold;<br>
+}<br>
+<br>
+nav a {<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp; margin-left: 20px;<br>
+}<br>
+<br>
+.hero {<br>
+&nbsp;&nbsp;&nbsp; background: linear-gradient(135deg, #163a5f, #2876a8);<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; padding: 90px 8%;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.hero h1 {<br>
+&nbsp;&nbsp;&nbsp; font-size: 42px;<br>
+&nbsp;&nbsp;&nbsp; line-height: 1.2;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 20px;<br>
+}<br>
+<br>
+.hero p {<br>
+&nbsp;&nbsp;&nbsp; max-width: 650px;<br>
+&nbsp;&nbsp;&nbsp; margin: 0 auto 28px;<br>
+&nbsp;&nbsp;&nbsp; font-size: 18px;<br>
+}<br>
+<br>
+.button {<br>
+&nbsp;&nbsp;&nbsp; display: inline-block;<br>
+&nbsp;&nbsp;&nbsp; background: #f0bd55;<br>
+&nbsp;&nbsp;&nbsp; color: #163a5f;<br>
+&nbsp;&nbsp;&nbsp; padding: 13px 25px;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 6px;<br>
+&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp; font-weight: bold;<br>
+}<br>
+<br>
+section {<br>
+&nbsp;&nbsp;&nbsp; padding: 65px 8%;<br>
+}<br>
+<br>
+.section-title {<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; font-size: 30px;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 15px;<br>
+&nbsp;&nbsp;&nbsp; color: #163a5f;<br>
+}<br>
+<br>
+.intro {<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; max-width: 700px;<br>
+&nbsp;&nbsp;&nbsp; margin: 0 auto 35px;<br>
+}<br>
+<br>
+.cards {<br>
+&nbsp;&nbsp;&nbsp; display: grid;<br>
+&nbsp;&nbsp;&nbsp; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));<br>
+&nbsp;&nbsp;&nbsp; gap: 22px;<br>
+}<br>
+<br>
+.card {<br>
+&nbsp;&nbsp;&nbsp; background: white;<br>
+&nbsp;&nbsp;&nbsp; padding: 28px;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+&nbsp;&nbsp;&nbsp; border: 1px solid #dce6f0;<br>
+&nbsp;&nbsp;&nbsp; box-shadow: 0 4px 14px rgba(22, 58, 95, 0.06);<br>
+}<br>
+<br>
+.card h3 {<br>
+&nbsp;&nbsp;&nbsp; color: #163a5f;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 12px;<br>
+}<br>
+<br>
+.about {<br>
+&nbsp;&nbsp;&nbsp; background: #e7f0f8;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.contact {<br>
+&nbsp;&nbsp;&nbsp; background: #163a5f;<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.contact h2 {<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+}<br>
+<br>
+.contact p {<br>
+&nbsp;&nbsp;&nbsp; margin: 15px auto 25px;<br>
+}<br>
+<br>
+footer {<br>
+&nbsp;&nbsp;&nbsp; background: #102a45;<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; padding: 20px;<br>
+&nbsp;&nbsp;&nbsp; font-size: 14px;<br>
+}<br>
+<br>
+@media (max-width: 600px) {<br>
+&nbsp;&nbsp;&nbsp; header {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; nav a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin: 0 7px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .hero {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 65px 6%;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .hero h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 32px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; section {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 45px 6%;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+<br>
+&lt;body&gt;<br>
+<br>
+&lt;header&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="logo"&gt;Hendry Digital&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;nav&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#layanan"&gt;Layanan&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#tentang"&gt;Tentang&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="#kontak"&gt;Kontak&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/nav&gt;<br>
+&lt;/header&gt;<br>
+<br>
+&lt;main&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;section class="hero"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Website Profesional untuk Bisnis Anda&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Membantu bisnis menampilkan produk, layanan, dan informasi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; secara profesional melalui website yang rapi dan responsif.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="button" href="#kontak"&gt;Konsultasi Sekarang&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;section id="layanan"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Layanan Kami&lt;/h2&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="intro"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solusi website sederhana untuk membantu bisnis Anda tampil<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lebih profesional di dunia digital.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="cards"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Website Bisnis&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Halaman profil usaha untuk memperkenalkan bisnis,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; layanan, dan informasi kontak.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Landing Page&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Halaman promosi yang fokus pada produk, layanan,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dan ajakan untuk menghubungi bisnis Anda.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Perbaikan Website&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bantuan memperbaiki tampilan, teks, tautan,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dan bagian website sederhana.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;section id="tentang" class="about"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Tentang Hendry Digital&lt;/h2&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="intro"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hendry Digital berfokus pada pembuatan halaman website<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yang sederhana, jelas, mudah digunakan, dan menyesuaikan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kebutuhan bisnis.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;section id="kontak" class="contact"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Mari Bangun Website Anda&lt;/h2&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Punya ide atau membutuhkan halaman website untuk bisnis?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hubungi kami untuk berdiskusi.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="button"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; href="https://wa.me/6285161367779"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; target="_blank"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rel="noopener noreferrer"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hubungi Kami via WhatsApp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
+&lt;/main&gt;<br>
+<br>
+&lt;footer&gt;<br>
+&nbsp;&nbsp;&nbsp; &amp;copy; 2026 Hendry Digital. All rights reserved.<br>
+&lt;/footer&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</div>
+</body>
+</html>
