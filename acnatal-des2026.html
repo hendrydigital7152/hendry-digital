@@ -30,10 +30,18 @@ header h1 {
   font-size: 38px;
 }
 
-header p {
+header p:not(.tagline) {
   color: #e6c878;
-  font-size: 22px;
+  font-size: 38px;
+  font-weight: bold;
   margin-top: 8px;
+}
+
+header .tagline {
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 nav {
@@ -71,6 +79,7 @@ nav a {
 
 .hero p {
   max-width: 600px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
