@@ -3,15 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Katalog Karyabilitas</title>
 
 <style>
-
 *{
     box-sizing:border-box;
 }
-
 body{
     margin:0;
     font-family:Arial,sans-serif;
@@ -79,11 +76,9 @@ section{
     font-weight:bold;
 }
 
-
 .card h3{
     color:#163A5F;
 }
-
 
 section h2{
     color:#163A5F;
@@ -94,7 +89,6 @@ section h2{
 #nonmakanan > p {
     text-align: center;
 }
-
 .wa-button {
 display: block;
 margin: 18px auto;
@@ -113,13 +107,9 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 background-color: #245580;
 }
 
-
-
 </style>
 </head>
-
 <body>
-
 <nav>
     <a href="#home">Home</a>
     <a href="#nonmakanan">Non Makanan</a>
@@ -137,20 +127,82 @@ background-color: #245580;
     <h3>Blitar</h3>
     <p>Produk karya ODGJ, tuna wicara dan tuli.</p>
 
- <div class="card">
+<div class="card" style="width:100%;max-width:520px;">
     <h3>Kain Batik Ciprat</h3>
-    <p>Batik ciprat karya disabilitas. Ukuran 2 x 1,15 meter. Motif dan warna bisa dipesan sesuai permintaan. Pemesanan minimal H-7.</p>
-    <p>Harga: Rp 100.000</p>
-    <div>
-        <button onclick="kurang()">−</button>
-        <span id="jumlah">1</span>
-        <button onclick="tambah()">+</button>
-    </div>
+    <p>Ukuran 2 × 1,15 meter. Motif dan warna dapat dipesan sesuai permintaan. Pemesanan minimal H-7.</p>
 
-<p>Total: <strong id="total">Rp -</strong></p>
-<button style="background-color:#163A5F; color:white; padding:15px 28px; border:0; border-radius:10px; font-weight:bold; font-size:18px;" onclick="pesanWhatsApp()">Pesan via WhatsApp</button>
+<div style="display:grid;grid-template-columns:1fr;gap:15px;margin:15px 0;">
+    <img src="batik1.jpg" alt="Batik Ciprat kategori 1" style="width:100%;height:auto;border-radius:8px;">
+    <img src="batik2.jpg" alt="Batik Ciprat kategori 2" style="width:100%;height:auto;border-radius:8px;">
+    <img src="batik3.jpg" alt="Batik Ciprat kategori 3" style="width:100%;height:auto;border-radius:8px;">
+</div>
 
-    </div>
+    <label for="motifBatik">Pilih motif / seri:</label>
+    <select id="motifBatik" style="width:100%;padding:10px;margin:8px 0;">
+        <option>Red Edition - Seri 1</option>
+        <option>Red Edition - Seri 2</option>
+        <option>Red Edition - Seri 3</option>
+        <option>Red Edition - Seri 4</option>
+        <option>Terracota - Seri 1</option>
+        <option>Terracota - Seri 2</option>
+        <option>Terracota - Seri 3</option>
+        <option>Terracota - Seri 4</option>
+        <option>Black - Seri 1</option>
+        <option>Black - Seri 2</option>
+        <option>Black - Seri 3</option>
+        <option>Black - Seri 4</option>
+        <option>Khatulistiwa Cakrapalah - Seri 1</option>
+        <option>Khatulistiwa Cakrapalah - Seri 2</option>
+        <option>Khatulistiwa Cakrapalah - Seri 3</option>
+        <option>Khatulistiwa Cakrapalah - Seri 4</option>
+        <option>Ciprat Ungu - Seri 1</option>
+        <option>Ciprat Ungu - Seri 2</option>
+        <option>Ciprat Ungu - Seri 3</option>
+        <option>Ciprat Ungu - Seri 4</option>
+        <option>Ciprat Soft Color - Seri 1</option>
+        <option>Ciprat Soft Color - Seri 2</option>
+        <option>Ciprat Soft Color - Seri 3</option>
+        <option>Ciprat Soft Color - Seri 4</option>
+        <option>Navy - Seri 1</option>
+        <option>Navy - Seri 2</option>
+        <option>Navy - Seri 3</option>
+        <option>Navy - Seri 4</option>
+        <option>Blue Black - Seri 1</option>
+        <option>Blue Black - Seri 2</option>
+        <option>Blue Black - Seri 3</option>
+        <option>Kawung Cakrapalah</option>
+        <option>Lime</option>
+        <option>Ciprat Hijau</option>
+        <option>Ciprat Kombinasi Cap - Seri 1</option>
+        <option>Ciprat Kombinasi Cap - Seri 2</option>
+    </select>
+
+    <label for="bahanBatik">Pilih jenis kain:</label>
+    <select id="bahanBatik" style="width:100%;padding:10px;margin:8px 0;">
+        <option value="275000">Prima — Rp275.000</option>
+        <option value="305000">Primisima — Rp305.000</option>
+        <option value="425000">Jepang — Rp425.000</option>
+    </select>
+
+    <button type="button" onclick="tambahKeKeranjang()"
+        style="width:100%;margin-top:12px;background:#163A5F;color:white;padding:12px;border:0;border-radius:8px;">
+        + Tambahkan ke Keranjang
+    </button>
+
+    <hr style="margin:24px 0;">
+
+    <h3>Keranjang Pesanan</h3>
+    <div id="isiKeranjang">Belum ada produk.</div>
+
+    <p>Total seluruh pesanan:</p>
+    <strong id="totalKeranjang" style="font-size:22px;">Rp0</strong>
+
+    <button type="button" class="wa-button"
+        onclick="pesanKeranjangWhatsApp()">
+        Pesan Semua via WhatsApp
+    </button>
+</div>
+
     <h3>Tas &amp; Pouch</h3>
     <p>Batik Ciprat kombinasi bahan pilihan. Pemesanan minimal H-7, pengiriman dari Jawa Timur.</p>
 
@@ -159,7 +211,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
         <p>Ukuran: 24 × 14 × 7 cm. Satu ruang beresleting.</p>
     </div>
-
     <div class="card">
         <h3>Aneesha Pouch</h3>
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
@@ -177,7 +228,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
         <p>Ukuran: 33 × 22 cm. Satu ruang beresleting.</p>
     </div>
-
     <div class="card">
         <h3>Kimy Pouch</h3>
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
@@ -189,7 +239,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
         <p>Ukuran: 25 × 18 cm. Satu kantong dalam.</p>
     </div>
-
     <div class="card">
         <h3>Febri Pouch</h3>
         <p>Bahan: Batik Ciprat kombinasi kulit sintetis atau kanvas.</p>
@@ -207,7 +256,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kanvas Jepang.</p>
         <p>Ukuran: 26 × 17 × 8 cm. Satu ruang beresleting.</p>
     </div>
-
     <div class="card">
         <h3>Mini Alaemje Bag</h3>
         <p>Bahan: Batik Ciprat dan kanvas Jepang.</p>
@@ -225,7 +273,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kanvas Jepang.</p>
         <p>Ukuran: 36 × 28 × 14 cm. Dua kantong dalam.</p>
     </div>
-
     <div class="card">
         <h3>Tas Laptop 14 Inch</h3>
         <p>Bahan: Batik Ciprat dan kanvas Jepang.</p>
@@ -243,7 +290,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
         <p>Ukuran: 28 × 21 × 6 cm. Dua ruang dan flap bermagnet.</p>
     </div>
-
     <div class="card">
         <h3>Adiba Bag</h3>
         <p>Bahan: Batik Ciprat, kain drill, dan pegangan kulit sintetis.</p>
@@ -255,7 +301,6 @@ background-color: #245580;
         <p>Bahan: Batik Ciprat dan kulit sintetis.</p>
         <p>Ukuran: 35 × 34 × 10 cm. Satu kantong dalam beresleting.</p>
     </div>
-
     <div class="card">
         <h3>Hanum Totebag</h3>
         <p>Bahan: Batik Ciprat, kain drill, dan pegangan kulit sintetis.</p>
@@ -263,7 +308,6 @@ background-color: #245580;
     </div>
 
 <button class="wa-button" onclick="window.open('https://wa.me/6285161367779?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Tas%20%26%20Pouch','_blank')">Tanya Tas & Pouch via WhatsApp</button>
-
 
 <h3>Kaktus Rajut</h3>
  <p>Kerajinan rajut buatan penyandang disabilitas fisik.</p>
@@ -282,7 +326,6 @@ background-color: #245580;
  <h3>Opuntia</h3> 
 <p>Tinggi 10 cm.</p> 
 </div> 
-
 <div class="card"> 
 <h3>Haworthia</h3> 
 <p>Tinggi 10 cm.</p> 
@@ -304,7 +347,6 @@ background-color: #245580;
 <button class="wa-button" onclick="window.open('https://wa.me/6285161367779?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20Kaktus%20Rajut%20dan%20Cupcake%20Rajut','_blank')">Tanya Kaktus &amp; Cupcake via WhatsApp</button>
 
 </section>
-
 <section id="makanan">
  <h2>Makanan</h2> 
 <p>Produk makanan berdasarkan lokasi pembuat.</p> 
@@ -326,7 +368,6 @@ background-color: #245580;
         <p>Pilihan rasa Original, Balado, dan BBQ.</p>
         <p>Berat: 200 gram</p>
     </div>
-
     <div class="card">
         <h3>Keripik Singkong</h3>
         <p>Keripik singkong buatan Karyabilitas.</p>
@@ -342,7 +383,6 @@ background-color: #245580;
 <h3>Nastar Jumbo</h3>
  <p>Isi 12 buah, berat 500 gram.</p> 
 </div> 
-
 <div class="card"> 
 <h3>Sagu Keju</h3> 
 <p>Berat 250 gram.</p> 
@@ -357,7 +397,6 @@ background-color: #245580;
  <h3>Nastar</h3> 
 <p>Berat 250 gram.</p> 
 </div> 
-
 <div class="card"> 
 <h3>Chui Kao So</h3>
  <p>Berat 200 gram.</p> 
@@ -372,7 +411,6 @@ background-color: #245580;
 <h3>Kue Kacang</h3> 
 <p>Berat 250 gram.</p>
  </div> 
-
 <div class="card">
  <h3>Brownies Krispi</h3>
  <p>Berat 150 gram.</p>
@@ -388,7 +426,6 @@ background-color: #245580;
  <p>Pilihan Full Chocolate dan Choco Cheese.</p> 
 <p>Berat 650 gram.</p>
  </div>
-
  <div class="card"> 
 <h3>Nugget Ayam</h3> 
 <p>Pilihan Original, Keju, dan Jamur.</p> 
@@ -408,7 +445,6 @@ background-color: #245580;
 <button class="wa-button" onclick="window.open('https://wa.me/6285161367779?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Makanan%20Karyabilitas','_blank')">Tanya Produk Makanan via WhatsApp</button>
 
  </section>
-
 <section id="jasa"> ini
 <h2>Jasa</h2> 
 <p>Layanan kreatif karya Karyabilitas.</p>
@@ -422,7 +458,6 @@ background-color: #245580;
  <h3>Mural</h3>
  <p>Layanan seni mural untuk memperindah dinding dan ruang.</p>
  </div> 
-
 <div class="card">
  <h3>Lukis</h3> 
 <p>Karya seni lukis yang dapat disesuaikan dengan kebutuhan.</p> 
@@ -433,49 +468,71 @@ background-color: #245580;
 </section>
 
 <script>
+const keranjang = [];
 
-let jumlah = 1;
-let harga = 100000;
+function formatRupiah(n) {
+    return "Rp" + n.toLocaleString("id-ID");
+}
 
-function tampilkanTotal(){
-    if(harga > 0){
-        let total = jumlah * harga;
-        document.getElementById("total").innerText =
-            "Rp " + total.toLocaleString("id-ID");
+function tambahKeKeranjang() {
+    const motif = document.getElementById("motifBatik").value;
+    const pilih = document.getElementById("bahanBatik");
+    const harga = Number(pilih.value);
+    const bahan = pilih.options[pilih.selectedIndex].text.split(" — ")[0];
+    const kunci = motif + "|" + bahan;
+    const item = keranjang.find(p => p.kunci === kunci);
+
+    if (item) {
+        item.jumlah++;
+    } else {
+        keranjang.push({kunci, motif, bahan, harga, jumlah: 1});
     }
+    tampilkanKeranjang();
 }
 
-function tambah(){
-    jumlah++;
-    document.getElementById("jumlah").innerText = jumlah;
-    tampilkanTotal();
+function ubahJumlah(i, n) {
+    keranjang[i].jumlah += n;
+    if (keranjang[i].jumlah <= 0) keranjang.splice(i, 1);
+    tampilkanKeranjang();
 }
 
-function kurang(){
-    if(jumlah > 1){
-        jumlah--;
-        document.getElementById("jumlah").innerText = jumlah;
-        tampilkanTotal();
+function tampilkanKeranjang() {
+    const wadah = document.getElementById("isiKeranjang");
+    let total = 0;
+
+    wadah.innerHTML = keranjang.map((p, i) => {
+        const sub = p.harga * p.jumlah;
+        total += sub;
+        return `<div style="border:1px solid #B8D8EE;padding:10px;margin:10px 0;text-align:left">
+            <b>${p.motif}</b>
+            <p>Bahan: ${p.bahan}</p>
+            <p>Harga: ${formatRupiah(p.harga)}</p>
+            <button onclick="ubahJumlah(${i},-1)">−</button>
+            <span>${p.jumlah}</span>
+            <button onclick="ubahJumlah(${i},1)">+</button>
+            <p>Subtotal: ${formatRupiah(sub)}</p>
+        </div>`;
+    }).join("") || "Belum ada produk.";
+
+    document.getElementById("totalKeranjang").textContent = formatRupiah(total);
+}
+
+function pesanKeranjangWhatsApp() {
+    if (!keranjang.length) {
+        alert("Pilih produk terlebih dahulu.");
+        return;
     }
+
+    let isi = "Halo, saya ingin memesan Batik Ciprat Karyabilitas.\n\n";
+    keranjang.forEach((p, i) => {
+        isi += `${i + 1}. ${p.motif}\nBahan: ${p.bahan}\nJumlah: ${p.jumlah} kain\nSubtotal: ${formatRupiah(p.harga * p.jumlah)}\n\n`;
+    });
+
+    const total = keranjang.reduce((s, p) => s + p.harga * p.jumlah, 0);
+    isi += `Total: ${formatRupiah(total)}\nPemesanan minimal H-7.`;
+
+    window.open("https://wa.me/6285161367779?text=" + encodeURIComponent(isi), "_blank");
 }
-
-tampilkanTotal();
-
-function pesanWhatsApp(){
-    let total = jumlah * harga;
-
-    let pesan =
-        "Halo, saya ingin memesan Kain Batik Ciprat%0A" +
-        "Jumlah: " + jumlah + "%0A" +
-        "Total: Rp " + total.toLocaleString("id-ID");
-
-    window.open(
-        "https://wa.me/6285161367779?text=" + pesan,
-        "_blank"
-    );
-}
-
 </script>
-
 </body>
 </html>
