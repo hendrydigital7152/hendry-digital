@@ -80,6 +80,16 @@ section{
     color:#163A5F;
 }
 
+select,
+select option,
+#isiKeranjang,
+#isiKeranjang p,
+#isiKeranjang span,
+#isiKeranjang b,
+label {
+    color: #333333;
+}
+
 section h2{
     color:#163A5F;
     margin-bottom:25px;
@@ -197,10 +207,11 @@ background-color: #245580;
     <p>Total seluruh pesanan:</p>
     <strong id="totalKeranjang" style="font-size:22px;">Rp0</strong>
 
-    <button type="button" class="wa-button"
-        onclick="pesanKeranjangWhatsApp()">
-        Pesan Semua via WhatsApp
-    </button>
+<button type="button" class="wa-button"
+    style="color:#163A5F !important; background-color:#FFFFFF !important; opacity:1 !important;"
+    onclick="pesanKeranjangWhatsApp()">
+    Pesan Semua via WhatsApp
+</button>
 </div>
 
     <h3>Tas &amp; Pouch</h3>
