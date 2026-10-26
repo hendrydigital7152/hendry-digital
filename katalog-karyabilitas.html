@@ -117,6 +117,17 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 background-color: #245580;
 }
 
+.watermark {
+    position: fixed;
+    bottom: 8px;
+    left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: #163A5F;
+    opacity: 0.7;
+    z-index: 999;
+}
+
 </style>
 </head>
 <body>
@@ -208,10 +219,11 @@ background-color: #245580;
     <strong id="totalKeranjang" style="font-size:22px;">Rp0</strong>
 
 <button type="button" class="wa-button"
-    style="color:#163A5F !important; background-color:#FFFFFF !important; opacity:1 !important;"
+    style="color:#FFFFFF !important; background-color:#163A5F !important; opacity:1 !important;"
     onclick="pesanKeranjangWhatsApp()">
     Pesan Semua via WhatsApp
 </button>
+
 </div>
 
     <h3>Tas &amp; Pouch</h3>
@@ -545,5 +557,6 @@ function pesanKeranjangWhatsApp() {
     window.open("https://wa.me/6285161367779?text=" + encodeURIComponent(isi), "_blank");
 }
 </script>
+<div class="watermark">hc-creation</div>
 </body>
 </html>
