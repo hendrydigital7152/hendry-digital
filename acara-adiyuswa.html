@@ -91,6 +91,49 @@ header p {
   margin: 12px 0 24px;
 }
 
+
+.jadwal {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.kegiatan {
+  background: #fffdf7;
+  border: 1px solid #e5d7ae;
+  border-left: 4px solid #d6b45c;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.waktu {
+  display: block;
+  color: #9b792e;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.kegiatan h3 {
+  color: #17432f;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.kegiatan p {
+  line-height: 1.6;
+  margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+  .jadwal {
+    grid-template-columns: 1fr;
+  }
+}
+
+  
 .note {
   background: #fff8e5;
   border-left: 4px solid #d6b45c;
