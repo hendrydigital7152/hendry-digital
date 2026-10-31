@@ -158,6 +158,28 @@ header p {
   background: #e6c878;
 }
 
+.anggaran-btn {
+  display: block;
+  margin: 28px auto 0;
+  padding: 13px 24px;
+  background: #123d2b;
+  color: #e6c878;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.anggaran-box {
+  display: none;
+  background: white;
+  border: 1px solid #d6b45c;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 15px;
+  text-align: left;
+}
+  
 footer {
   background: #123d2b;
   color: white;
@@ -258,6 +280,20 @@ footer {
       </p>
     </div>
 
+    <button class="anggaran-btn" onclick="toggleAnggaran()">
+  ANGGARAN ACARA ADIYUSWA
+</button>
+
+<div class="anggaran-box" id="anggaran">
+  <h3>ANGGARAN ACARA ADIYUSWA</h3>
+  <p>Parcel Persembahan: Rp500.000</p>
+  <p>Goody Bag: Rp10.000.000</p>
+  <p>MC & Door Prize: Rp2.000.000</p>
+  <p>Lain-lain (Tips OB): Rp300.000</p>
+  <hr>
+  <p><strong>Total: Rp12.800.000</strong></p>
+</div>
+    
     <a href="acnatal-des2026.html" class="button">
       ← Kembali ke Agenda Natal
     </a>
@@ -272,5 +308,17 @@ footer {
 
 <div class="credit">hc-creation</div>
 
+<script>
+function toggleAnggaran() {
+  const box = document.getElementById("anggaran");
+
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}
+</script>
+  
 </body>
 </html>
