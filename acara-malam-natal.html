@@ -68,7 +68,8 @@ ul {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   background: #d6b45c;
   color: #183426;
   padding: 12px 20px;
@@ -76,6 +77,27 @@ ul {
   text-decoration: none;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.anggaran-btn {
+  display: block;
+  background: #123d2b;
+  color: #e6c878;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.anggaran-box {
+  display: none;
+  background: white;
+  border: 1px solid #d6b45c;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 10px;
 }
 
 footer {
@@ -151,6 +173,16 @@ footer {
 </ul>
 </div>
 
+ <button class="anggaran-btn" onclick="toggleAnggaran()">
+  ANGGARAN MALAM NATAL
+</button>
+
+<div class="anggaran-box" id="anggaran">
+  <h3>ANGGARAN MALAM NATAL</h3>
+  <p>Pembelian Cookies: Rp500.000</p>
+  <p><strong>Total: Rp500.000</strong></p>
+</div> 
+
 <a href="acnatal-des2026.html" class="btn">
 Kembali ke Agenda Natal
 </a>
@@ -165,7 +197,19 @@ Kembali ke Agenda Natal
   hc-creation
 </div>
 
+<script>
+function toggleAnggaran() {
+  const box = document.getElementById("anggaran");
+
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}
+</script>
+
 </body>
 </html>
-
+  
 
