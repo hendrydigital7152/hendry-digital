@@ -89,6 +89,26 @@ footer {
   border-radius: 10px;
   box-shadow: 0 3px 10px #00000020;
 }
+
+.anggaran-btn {
+  background: #123d2b;
+  color: #e6c878;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.anggaran-box {
+  display: none;
+  background: white;
+  border: 1px solid #d6b45c;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
   
 </style>
 </head>
@@ -107,6 +127,15 @@ footer {
   
 <main>
 <h2>Susunan Acara Bazaar Natal 2026</h2>
+
+ <button class="anggaran-btn" onclick="toggleAnggaran()">
+  ANGGARAN BAZAAR NATAL
+</button>
+
+<div class="anggaran-box" id="anggaran">
+  <h3>ANGGARAN BAZAAR NATAL</h3>
+  <p>Anggaran sepenuhnya dikeluarkan dari Sie Dana.</p>
+</div> 
 
 <div class="sesi">
 <h3>SESI PAGI | 09.00–10.00</h3>
@@ -171,6 +200,18 @@ Kembali ke Agenda Natal
 <div style="position:fixed; bottom:8px; left:10px; font-size:11px; font-style:italic; color:#e6c878; z-index:9999;">
   hc-creation
 </div>
+
+<script>
+function toggleAnggaran() {
+  const box = document.getElementById("anggaran");
+
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}
+</script>
   
 </body>
 </html>
