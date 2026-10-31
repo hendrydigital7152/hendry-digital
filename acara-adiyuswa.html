@@ -180,6 +180,27 @@ header p {
   text-align: left;
 }
 
+  .rincian-anggaran {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  column-gap: 8px;
+  row-gap: 8px;
+  align-items: baseline;
+  text-align: left;
+}
+
+.nilai-anggaran {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.garis-total {
+  grid-column: 3;
+  border-top: 1px solid #24352b;
+  margin-top: 4px;
+  min-width: 100%;
+}
+  
   .anggaran-box p {
   margin: 10px 0;
   line-height: 1.8;
@@ -291,12 +312,32 @@ footer {
 
 <div class="anggaran-box" id="anggaran">
   <h3>ANGGARAN ACARA ADIYUSWA</h3>
-  <p>Parcel Persembahan : Rp500.000</p>
-  <p>Goody Bag: Rp10.000.000</p>
-  <p>MC & Door Prize: Rp2.000.000</p>
-  <p>Lain-lain (Tips OB): Rp300.000</p>
-  <hr>
-  <p><strong>T o t a l  : Rp12.800.000</strong></p>
+
+  <div class="rincian-anggaran">
+    <span>Parcel Persembahan</span>
+    <span>:</span>
+    <span class="nilai-anggaran">Rp500.000</span>
+
+    <span>Goody Bag</span>
+    <span>:</span>
+    <span class="nilai-anggaran">Rp10.000.000</span>
+
+    <span>MC & Door Prize</span>
+    <span>:</span>
+    <span class="nilai-anggaran">Rp2.000.000</span>
+
+    <span>Lain-lain (Tips OB)</span>
+    <span>:</span>
+    <span class="nilai-anggaran">Rp300.000</span>
+
+    <span></span>
+    <span></span>
+    <span class="garis-total"></span>
+
+    <strong>Total</strong>
+    <strong>:</strong>
+    <strong class="nilai-anggaran">Rp12.800.000</strong>
+  </div>
 </div>
     
     <a href="acnatal-des2026.html" class="button">
