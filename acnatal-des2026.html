@@ -304,8 +304,52 @@ Mari merayakan Natal 2026 dengan kasih, sukacita, persaudaraan, dan semangat ber
   width: 100%;
   height: auto;
 }  
+
+.music-player {
+  text-align: center;
+  padding: 15px;
+  background: #123d2b;
+}
+
+.music-player button {
+  background: #e6c878;
+  color: #123d2b;
+  border: 1px solid #d6b45c;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
   
 </style>
+
+<div class="music-player">
+  <button id="musicButton" onclick="toggleMusic()">
+    Play Musik Natal
+  </button>
+</div>
+
+<audio id="christmasMusic" loop>
+  <source src="light_for_others_instrumental.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function toggleMusic() {
+  const music = document.getElementById("christmasMusic");
+  const button = document.getElementById("musicButton");
+
+  if (music.paused) {
+    music.play().then(() => {
+      button.textContent = "Pause Musik Natal";
+    }).catch(() => {
+      button.textContent = "Coba Putar Lagi";
+    });
+  } else {
+    music.pause();
+    button.textContent = "Play Musik Natal";
+  }
+}
+</script>
 
 </body>
 </html>
