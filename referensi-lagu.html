@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -40,17 +40,18 @@ header p {
   display: inline-block;
   margin: 15px 18px;
   padding: 10px 18px;
-  background: #8b0000;
-  color: white;
+  background: #123d2b;
+  color: #e6c878;
   text-decoration: none;
+  border: 1px solid #d6b45c;
   border-radius: 6px;
   font-weight: bold;
 }
 
 .back-home:hover {
-  background: #b8860b;
+  background: #17432f;
 }
-  
+
 nav {
   background: #0b2c20;
   padding: 15px 5px;
@@ -107,11 +108,30 @@ h2 {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #123d2b;
+  padding: 15px 20px;
   color: #e6c878;
-  text-align: center;
-  padding: 20px;
+}
+
+footer .copyright {
   font-size: 14px;
+  font-style: italic;
+}
+
+footer .footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+footer .footer-center strong {
+  font-size: 18px;
+}
+
+footer .footer-center span {
+  font-size: 15px;
 }
 
 @media (max-width: 500px) {
@@ -123,10 +143,26 @@ footer {
   header h1 {
     font-size: 25px;
   }
+
+  footer {
+    padding: 15px 10px;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+  }
+
+  footer .footer-center strong {
+    font-size: 15px;
+  }
+
+  footer .footer-center span {
+    font-size: 13px;
+  }
 }
 </style>
 </head>
-  
+
 <body>
 
 <header>
@@ -138,7 +174,7 @@ footer {
 <a href="acnatal-2026.html" class="back-home">
 ← Kembali ke Beranda
 </a>
-  
+
 <nav>
 <a href="acnatal-2026.html">Beranda</a>
 <a href="galeri-natal.html">Galeri</a>
@@ -158,110 +194,94 @@ dalam semangat iman, sukacita, dan keberagaman budaya.
 
 <div class="category">
 <h2>1. Bazaar Natal - 6 Desember 2026</h2>
-
 <div class="song">
 <strong>1. Hai Dunia Gembiralah – PS 476</strong>
 <p>Lagu Natal meriah dan penuh sukacita.</p>
 </div>
-
 <div class="song">
 <strong>2. Hai Siarkan di Gunung – PS 477</strong>
 <p>Mengajak semua orang mewartakan kelahiran Kristus.</p>
 </div>
-
 <div class="song">
 <strong>3. Feliz Navidad</strong>
 <p>Lagu populer untuk suasana bazaar yang ceria.</p>
 </div>
-
 </div>
 
 <div class="category">
 <h2>2. Misa Malam Natal - 24 Desember 2026</h2>
-
 <div class="song">
 <strong>1. Hai Mari Berhimpun</strong>
 <p>Lagu pembukaan yang mengajak umat menyambut kelahiran Kristus.</p>
 </div>
-
 <div class="song">
 <strong>2. Di Betlehem T'lah Lahir</strong>
 <p>Mengisahkan kelahiran Yesus di Betlehem.</p>
 </div>
-
 <div class="song">
 <strong>3. Dalam Gua Dingin</strong>
 <p>Lagu Natal yang menggambarkan kesederhanaan kelahiran Yesus.</p>
 </div>
-
 </div>
 
 <div class="category">
 <h2>3. Acara Malam Natal - 24 Desember 2026</h2>
-
 <div class="song">
 <strong>1. Dari Pulau dan Benua</strong>
 <p>Lagu yang menggambarkan pewartaan kabar sukacita ke seluruh dunia.</p>
 </div>
-
 <div class="song">
 <strong>2. Seribu Lilin</strong>
 <p>Lagu reflektif tentang terang, harapan, dan kasih Natal.</p>
 </div>
-
 <div class="song">
 <strong>3. Feliz Navidad</strong>
 <p>Lagu ceria untuk membangun suasana kebersamaan.</p>
 </div>
-
 </div>
 
 <div class="category">
 <h2>4. Misa Natal BIA - 25 Desember 2026</h2>
-
 <div class="song">
 <strong>1. Hai Anak Semua</strong>
 <p>Lagu ceria untuk mengajak anak-anak menyambut Natal.</p>
 </div>
-
 <div class="song">
 <strong>2. Lahir Kristus di Dunia</strong>
 <p>Mengajak anak-anak mengenal makna kelahiran Yesus.</p>
 </div>
-
 <div class="song">
 <strong>3. Hai Dunia Gembiralah</strong>
 <p>Lagu penuh sukacita untuk perayaan Natal bersama anak-anak.</p>
 </div>
-
 </div>
 
 <div class="category">
 <h2>5. Misa Natal Adiyuswa - 26 Desember 2026</h2>
-
 <div class="song">
 <strong>1. Slamat-Slamat Datang</strong>
 <p>Lagu penyambutan yang hangat dan penuh sukacita.</p>
 </div>
-
 <div class="song">
 <strong>2. Di Betlehem T'lah Lahir</strong>
 <p>Mengenang kelahiran Yesus dengan suasana khidmat.</p>
 </div>
-
 <div class="song">
 <strong>3. Hai Mari Berhimpun</strong>
 <p>Mengajak umat berkumpul dan merayakan kelahiran Kristus.</p>
 </div>
-
 </div>
 
 </main>
 
 <footer>
-<p><i>HC-Creation</i></p>
-<p>LIGHT FOR OTHERS - Natal 2026</p>
+<span class="copyright">HC-Creation</span>
+<div class="footer-center">
+<strong>LIGHT FOR OTHERS</strong><br>
+<span>Natal 2026 · RC-PIK</span>
+</div>
 </footer>
 
 </body>
 </html>
+```
