@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>notepad</title>
+</head>
+<style type="text/css">
+ol,ul{
+display:block;
+list-style-type:none;
+margin:3px;
+}
+</style><body>
+<div>&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="id"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+<br>
+&lt;title&gt;Pastoral Counseling Center | Paroki MBSB&lt;/title&gt;<br>
+<br>
+&lt;style&gt;<br>
+<br>
+* {<br>
+&nbsp;&nbsp;&nbsp; margin: 0;<br>
+&nbsp;&nbsp;&nbsp; padding: 0;<br>
+&nbsp;&nbsp;&nbsp; box-sizing: border-box;<br>
+}<br>
+<br>
+html {<br>
+&nbsp;&nbsp;&nbsp; scroll-behavior: smooth;<br>
+}<br>
+<br>
+body {<br>
+&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;&nbsp; line-height: 1.7;<br>
+&nbsp;&nbsp;&nbsp; color: #444;<br>
+&nbsp;&nbsp;&nbsp; background: #fff;<br>
+}<br>
+<br>
+/* NAVBAR */<br>
+<br>
+nav {<br>
+&nbsp;&nbsp;&nbsp; background: #7b2638;<br>
+&nbsp;&nbsp;&nbsp; padding: 15px 6%;<br>
+&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; justify-content: space-between;<br>
+&nbsp;&nbsp;&nbsp; align-items: center;<br>
+&nbsp;&nbsp;&nbsp; flex-wrap: wrap;<br>
+}<br>
+<br>
+.logo {<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; font-size: 19px;<br>
+&nbsp;&nbsp;&nbsp; font-weight: bold;<br>
+}<br>
+<br>
+nav ul {<br>
+&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; list-style: none;<br>
+&nbsp;&nbsp;&nbsp; gap: 22px;<br>
+&nbsp;&nbsp;&nbsp; flex-wrap: wrap;<br>
+}<br>
+<br>
+nav ul li a {<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp; font-size: 14px;<br>
+}<br>
+<br>
+nav ul li a:hover {<br>
+&nbsp;&nbsp;&nbsp; color: #f4d58d;<br>
+}<br>
+<br>
+/* HERO */<br>
+<br>
+.hero {<br>
+&nbsp;&nbsp;&nbsp; background: linear-gradient(135deg, #7b2638, #a94d55);<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; padding: 100px 20px;<br>
+}<br>
+<br>
+.hero h1 {<br>
+&nbsp;&nbsp;&nbsp; font-size: 38px;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 10px;<br>
+}<br>
+<br>
+.hero h2 {<br>
+&nbsp;&nbsp;&nbsp; font-size: 23px;<br>
+&nbsp;&nbsp;&nbsp; font-weight: normal;<br>
+&nbsp;&nbsp;&nbsp; color: #f4d58d;<br>
+}<br>
+<br>
+.hero p {<br>
+&nbsp;&nbsp;&nbsp; max-width: 650px;<br>
+&nbsp;&nbsp;&nbsp; margin: 20px auto;<br>
+&nbsp;&nbsp;&nbsp; font-size: 17px;<br>
+}<br>
+<br>
+.btn {<br>
+&nbsp;&nbsp;&nbsp; display: inline-block;<br>
+&nbsp;&nbsp;&nbsp; background: #e7bd68;<br>
+&nbsp;&nbsp;&nbsp; color: #54202b;<br>
+&nbsp;&nbsp;&nbsp; padding: 12px 28px;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 5px;<br>
+&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp; font-weight: bold;<br>
+&nbsp;&nbsp;&nbsp; margin-top: 15px;<br>
+}<br>
+<br>
+.btn:hover {<br>
+&nbsp;&nbsp;&nbsp; background: white;<br>
+}<br>
+<br>
+/* GENERAL SECTION */<br>
+<br>
+section {<br>
+&nbsp;&nbsp;&nbsp; padding: 65px 8%;<br>
+}<br>
+<br>
+.section-title {<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; color: #7b2638;<br>
+&nbsp;&nbsp;&nbsp; font-size: 29px;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 30px;<br>
+}<br>
+<br>
+.section-text {<br>
+&nbsp;&nbsp;&nbsp; max-width: 850px;<br>
+&nbsp;&nbsp;&nbsp; margin: auto;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+/* ABOUT */<br>
+<br>
+.about {<br>
+&nbsp;&nbsp;&nbsp; background: #fffaf5;<br>
+}<br>
+<br>
+.about p {<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 15px;<br>
+}<br>
+<br>
+/* VISI MISI */<br>
+<br>
+.vision-grid {<br>
+&nbsp;&nbsp;&nbsp; display: grid;<br>
+&nbsp;&nbsp;&nbsp; grid-template-columns: repeat(3, 1fr);<br>
+&nbsp;&nbsp;&nbsp; gap: 22px;<br>
+&nbsp;&nbsp;&nbsp; margin-top: 35px;<br>
+}<br>
+<br>
+.vision-card {<br>
+&nbsp;&nbsp;&nbsp; background: white;<br>
+&nbsp;&nbsp;&nbsp; padding: 25px;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+&nbsp;&nbsp;&nbsp; box-shadow: 0 3px 12px rgba(0,0,0,0.08);<br>
+&nbsp;&nbsp;&nbsp; border-top: 4px solid #a94d55;<br>
+}<br>
+<br>
+.vision-card h3 {<br>
+&nbsp;&nbsp;&nbsp; color: #7b2638;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 12px;<br>
+}<br>
+<br>
+/* LAYANAN */<br>
+<br>
+.services {<br>
+&nbsp;&nbsp;&nbsp; background: #fffaf5;<br>
+}<br>
+<br>
+.service-grid {<br>
+&nbsp;&nbsp;&nbsp; display: grid;<br>
+&nbsp;&nbsp;&nbsp; grid-template-columns: repeat(3, 1fr);<br>
+&nbsp;&nbsp;&nbsp; gap: 20px;<br>
+}<br>
+<br>
+.service-card {<br>
+&nbsp;&nbsp;&nbsp; background: white;<br>
+&nbsp;&nbsp;&nbsp; padding: 25px;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+&nbsp;&nbsp;&nbsp; box-shadow: 0 3px 12px rgba(0,0,0,0.07);<br>
+}<br>
+<br>
+.service-card h3 {<br>
+&nbsp;&nbsp;&nbsp; color: #7b2638;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 10px;<br>
+}<br>
+<br>
+/* TEAM */<br>
+<br>
+.team {<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.team-box {<br>
+&nbsp;&nbsp;&nbsp; max-width: 750px;<br>
+&nbsp;&nbsp;&nbsp; margin: auto;<br>
+&nbsp;&nbsp;&nbsp; background: #fffaf5;<br>
+&nbsp;&nbsp;&nbsp; padding: 35px;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+}<br>
+<br>
+/* GALLERY */<br>
+<br>
+.gallery {<br>
+&nbsp;&nbsp;&nbsp; background: #fffaf5;<br>
+}<br>
+<br>
+.gallery-box {<br>
+&nbsp;&nbsp;&nbsp; max-width: 750px;<br>
+&nbsp;&nbsp;&nbsp; margin: auto;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; padding: 30px;<br>
+&nbsp;&nbsp;&nbsp; background: white;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+}<br>
+<br>
+/* CONFIDENTIALITY */<br>
+<br>
+.privacy {<br>
+&nbsp;&nbsp;&nbsp; background: #7b2638;<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.privacy h2 {<br>
+&nbsp;&nbsp;&nbsp; color: #f4d58d;<br>
+&nbsp;&nbsp;&nbsp; margin-bottom: 20px;<br>
+}<br>
+<br>
+.privacy p {<br>
+&nbsp;&nbsp;&nbsp; max-width: 800px;<br>
+&nbsp;&nbsp;&nbsp; margin: auto;<br>
+}<br>
+<br>
+/* CONTACT */<br>
+<br>
+.contact {<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.contact-box {<br>
+&nbsp;&nbsp;&nbsp; max-width: 700px;<br>
+&nbsp;&nbsp;&nbsp; margin: auto;<br>
+&nbsp;&nbsp;&nbsp; background: #fffaf5;<br>
+&nbsp;&nbsp;&nbsp; padding: 30px;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+}<br>
+<br>
+/* FOOTER */<br>
+<br>
+footer {<br>
+&nbsp;&nbsp;&nbsp; background: #54202b;<br>
+&nbsp;&nbsp;&nbsp; color: white;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; padding: 25px 15px;<br>
+&nbsp;&nbsp;&nbsp; font-size: 14px;<br>
+}<br>
+<br>
+footer p {<br>
+&nbsp;&nbsp;&nbsp; margin: 5px;<br>
+}<br>
+<br>
+/* RESPONSIVE */<br>
+<br>
+@media (max-width: 768px) {<br>
+<br>
+&nbsp;&nbsp;&nbsp; nav {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap: 12px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; nav ul {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; justify-content: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gap: 12px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .hero {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 75px 20px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .hero h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 29px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .hero h2 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 19px;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .vision-grid,<br>
+&nbsp;&nbsp;&nbsp; .service-grid {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; grid-template-columns: 1fr;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; section {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding: 50px 6%;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+}<br>
+<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+<br>
+&lt;body&gt;<br>
+<br>
+&lt;!-- NAVBAR --&gt;<br>
+<br>
+&lt;nav&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="logo"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PCC MBSB<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#beranda"&gt;Beranda&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#tentang"&gt;Tentang&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#visimisi"&gt;Visi &amp; Misi&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#layanan"&gt;Layanan&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#konselor"&gt;Konselor&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#kontak"&gt;Kontak&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>
+<br>
+&lt;/nav&gt;<br>
+<br>
+<br>
+&lt;!-- HERO --&gt;<br>
+<br>
+&lt;header class="hero" id="beranda"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h1&gt;PASTORAL COUNSELING CENTER&lt;/h1&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2&gt;PAROKI MARIA BUNDA SEGALA BANGSA&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menemani, Mendengarkan, dan Menguatkan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sebuah pelayanan pastoral untuk mendampingi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; umat dalam perjalanan kehidupan.<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;a href="#tentang" class="btn"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mengenal PCC<br>
+&nbsp;&nbsp;&nbsp; &lt;/a&gt;<br>
+<br>
+&lt;/header&gt;<br>
+<br>
+<br>
+&lt;!-- TENTANG PCC --&gt;<br>
+<br>
+&lt;section class="about" id="tentang"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Tentang Kami&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="section-text"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pastoral Counseling Center (PCC) merupakan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pelayanan konseling pastoral di bawah naungan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paroki Maria Bunda Segala Bangsa,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kota Wisata, Cibubur.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PCC MBSB mulai menjalankan pelayanan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pada tanggal 7 Oktober 2016.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melalui pelayanan ini, PCC hadir untuk<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; belajar memahami, mendengarkan, membantu,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dan memberikan pendampingan bagi umat<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yang membutuhkan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- VISI MISI --&gt;<br>
+<br>
+&lt;section id="visimisi"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Visi, Misi &amp; Motto&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="vision-grid"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="vision-card"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;VISI&lt;/h3&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menciptakan keluarga Katolik yang rukun,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; damai dan beriman, sehingga mereka mampu<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; menghayati panggilan Kristus untuk<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mendirikan Gereja Basis di dalam keluarga.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="vision-card"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;MISI&lt;/h3&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Belajar untuk mengerti, mendengar,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; membantu dan memberikan bahu untuk<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bersandar bagi mereka yang bermasalah.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="vision-card"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;MOTTO&lt;/h3&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Membawa harapan bagi mereka yang putus asa,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kegembiraan bagi mereka yang berduka,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kedamaian dalam perselisihan,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pengertian dalam kesalahpahaman<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dan cinta dalam kebencian.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- LAYANAN --&gt;<br>
+<br>
+&lt;section class="services" id="layanan"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Layanan Konseling&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p class="section-text"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan konseling pastoral PCC MBSB<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; terbuka bagi umat yang membutuhkan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pendampingan dalam berbagai tahap kehidupan.<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="service-grid"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="service-card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Pasangan Suami Istri&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pendampingan dalam kehidupan perkawinan.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="service-card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Orang Muda Katolik&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pendampingan bagi kaum muda.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="service-card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Orang Tua Tunggal&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pendampingan dalam menjalani kehidupan keluarga.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="service-card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Lanjut Usia&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pendampingan bagi umat lanjut usia.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="service-card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Keluarga&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pendampingan dalam kehidupan keluarga.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="service-card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Umat Berkebutuhan Khusus&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Pendampingan bagi umat berkebutuhan khusus.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- KONSELOR --&gt;<br>
+<br>
+&lt;section class="team" id="konselor"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Tim Konselor PCC MBSB&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="team-box"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan PCC MBSB didukung oleh<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tim konselor yang menjalankan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pendampingan pastoral bagi umat.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p style="margin-top:15px;"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Profil Konselor Utama dan Konselor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dengan Perjanjian akan ditampilkan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pada bagian ini.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- GALERI --&gt;<br>
+<br>
+&lt;section class="gallery" id="galeri"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Dokumentasi Kegiatan&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="gallery-box"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berbagai kegiatan PCC MBSB dalam<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pengembangan pelayanan, pertemuan konselor,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sosialisasi, dan kegiatan bersama umat.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p style="margin-top:15px;"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Galeri foto kegiatan akan ditambahkan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; secara bertahap.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- KERAHASIAAN --&gt;<br>
+<br>
+&lt;section class="privacy"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2&gt;Kerahasiaan Konseling&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kerahasiaan merupakan komitmen utama<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dalam pelayanan konseling PCC MBSB.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apa yang dibicarakan dan dibahas dalam<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proses konseling dijaga kerahasiaannya.<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- KONTAK --&gt;<br>
+<br>
+&lt;section class="contact" id="kontak"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;h2 class="section-title"&gt;Informasi Pelayanan&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div class="contact-box"&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;PCC MBSB&lt;/h3&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paroki Maria Bunda Segala Bangsa<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kota Wisata, Cibubur<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p style="margin-top:15px;"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Informasi jadwal dan kontak pelayanan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; akan diperbarui.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+<br>
+&lt;/section&gt;<br>
+<br>
+<br>
+&lt;!-- FOOTER --&gt;<br>
+<br>
+&lt;footer&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pastoral Counseling Center<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paroki Maria Bunda Segala Bangsa<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melayani sejak 7 Oktober 2016<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;p style="margin-top:10px;"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#169; 2026 PCC MBSB<br>
+&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+<br>
+&lt;/footer&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+</body>
+</html>
