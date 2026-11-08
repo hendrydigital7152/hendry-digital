@@ -8,6 +8,7 @@
 
 <style>
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -21,19 +22,19 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.7;
-    color: #444;
-    background: #FFF0D9;
+    color: #243746;
+    background: #FFF7E8;
 }
 
 /* NAVBAR */
-
 nav {
-    background: #7b2638;
+    background: #245A73;
     padding: 15px 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-bottom: 3px solid #C9A44C;
 }
 
 .logo {
@@ -56,14 +57,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f4d58d;
+    color: #E2C77D;
 }
 
 /* HERO */
-
 .hero {
-    background: #8ECAE6;
-    color: #54202B;
+    background: linear-gradient(135deg, #8ECAE6, #B9DCEB);
+    color: #243746;
     text-align: center;
     padding: 100px 20px;
 }
@@ -71,6 +71,7 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 38px;
     margin-bottom: 10px;
+    color: #245A73;
 }
 
 .hero h2 {
@@ -87,8 +88,8 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    background: #e7bd68;
-    color: #54202b;
+    background: #C9A44C;
+    color: #243746;
     padding: 12px 28px;
     border-radius: 5px;
     text-decoration: none;
@@ -97,18 +98,17 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: white;
+    background: #E2C77D;
 }
 
 /* GENERAL SECTION */
-
 section {
     padding: 65px 8%;
 }
 
 .section-title {
     text-align: center;
-    color: #7b2638;
+    color: #245A73;
     font-size: 29px;
     margin-bottom: 30px;
 }
@@ -120,18 +120,15 @@ section {
 }
 
 /* ABOUT */
-
 .about {
-    background: #FFF0D9;
+    background: #FFF7E8;
 }
-
 
 .about p {
     margin-bottom: 15px;
 }
 
 /* VISI MISI */
-
 .vision-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -140,22 +137,21 @@ section {
 }
 
 .vision-card {
-    background: #DCEEF5;
+    background: #EAF4F8;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    border-top: 4px solid #a94d55;
+    border-top: 4px solid #7B2638;
 }
 
 .vision-card h3 {
-    color: #7b2638;
+    color: #245A73;
     margin-bottom: 12px;
 }
 
 /* LAYANAN */
-
 .services {
-    background: #F7EBDD;
+    background: #FFF7E8;
 }
 
 .service-grid {
@@ -163,40 +159,39 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-    
+
 .service-card {
-    background: #DCEEF5;
+    background: #EAF4F8;
     padding: 25px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    border-top: 4px solid #C9A44C;
 }
 
 .service-card h3 {
-    color: #7b2638;
+    color: #245A73;
     margin-bottom: 10px;
 }
 
 /* TEAM */
-
 .team {
     text-align: center;
+    background: #EAF4F8;
 }
 
 .team-box {
     max-width: 750px;
     margin: auto;
-    background: #fffaf5;
+    background: #FFF7E8;
     padding: 35px;
     border-radius: 10px;
+    border-top: 4px solid #C9A44C;
 }
 
 /* GALLERY */
-
 .gallery {
-    .gallery {
-    background: #FFF0D9;
-}
+    background: #FFF7E8;
 }
 
 .gallery-box {
@@ -204,20 +199,21 @@ section {
     margin: auto;
     text-align: center;
     padding: 30px;
-    background: #DCEEF5;
+    background: #EAF4F8;
     border-radius: 10px;
+    border-top: 4px solid #C9A44C;
 }
 
 /* CONFIDENTIALITY */
-
 .privacy {
-    background: #7b2638;
+    background: #245A73;
     color: white;
     text-align: center;
+    border-top: 4px solid #7B2638;
 }
 
 .privacy h2 {
-    color: #f4d58d;
+    color: #E2C77D;
     margin-bottom: 20px;
 }
 
@@ -227,27 +223,28 @@ section {
 }
 
 /* CONTACT */
-
 .contact {
+    background: #FFF7E8;
     text-align: center;
 }
 
 .contact-box {
     max-width: 700px;
     margin: auto;
-    background: #DCEEF5;
+    background: #EAF4F8;
     padding: 30px;
     border-radius: 10px;
+    border-top: 4px solid #C9A44C;
 }
 
 /* FOOTER */
-
 footer {
-    background: #54202b;
+    background: #245A73;
     color: white;
     text-align: center;
     padding: 25px 15px;
     font-size: 14px;
+    border-top: 3px solid #C9A44C;
 }
 
 footer p {
@@ -255,7 +252,6 @@ footer p {
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
 
     nav {
@@ -288,9 +284,8 @@ footer p {
     section {
         padding: 50px 6%;
     }
-
 }
-
+    
 </style>
 </head>
 
